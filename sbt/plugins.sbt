@@ -1,6 +1,6 @@
-resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+// resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
-resolvers += "Sonatype releases" at "http://oss.sonatype.org/content/repositories/releases/"
+// resolvers += "Sonatype releases" at "http://oss.sonatype.org/content/repositories/releases/"
 
 // xsbt-gpg-plugin, sbt-dirty-money
 resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
