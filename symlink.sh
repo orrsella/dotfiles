@@ -31,16 +31,19 @@ do
         # unlink
         if [ -L $dest ] ;
         then
+            # echo "Unlinking $dest"
             unlink $dest
         fi
 
-        # delete
+        # delete file
         if [ -a $dest ] ;
         then
+            # echo "Deleting $dest"
             rm -rf $dest
         fi
 
         # create link
-        ln -sfFv $src $dest
+        ln -sfF $src $dest
+        echo "$src -> $dest"
     fi
 done < $links

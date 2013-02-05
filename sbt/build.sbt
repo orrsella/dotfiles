@@ -6,6 +6,6 @@ shellPrompt in ThisBuild := {
 
 traceLevel := 10
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.9.2"
 
 cancelable := true
