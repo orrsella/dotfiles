@@ -1,0 +1,14 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"GenerateUUID",
+		"LiveReload",
+		"Markdown Preview",
+		"Package Control",
+		"Pretty JSON",
+		"SublimeCodeIntel",
+		"Theme - Soda"
+	]
+}
