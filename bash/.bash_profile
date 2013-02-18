@@ -9,6 +9,7 @@ alias mkdir='mkdir -p'                          # creat dirs recursively
 alias ln='ln -v'                                # make ln verbose
 alias ..='cd ..'
 alias size='du -sh'                             # get folder size
+alias cls='clear'                               # clean screen
 
 function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
 function title () { echo -en "\033]2;$1\007"; } # set terminal title

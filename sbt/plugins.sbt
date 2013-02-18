@@ -1,5 +1,3 @@
-// resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
-
 // resolvers += "Sonatype releases" at "http://oss.sonatype.org/content/repositories/releases/"
 
 // xsbt-gpg-plugin, sbt-dirty-money
@@ -18,3 +16,5 @@ addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.1")
 addSbtPlugin("com.eed3si9n" % "sbt-dirty-money" % "0.0.1")
 
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.1.0")
+
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.8.6")

@@ -6,6 +6,8 @@ shellPrompt in ThisBuild := {
 
 traceLevel := 10
 
-scalaVersion := "2.9.2"
+// scalaVersion := "2.9.2"
 
 cancelable := true
+
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
