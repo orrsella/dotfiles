@@ -1,60 +1,60 @@
 {
-    "bold_folder_labels": true,
-    "color_scheme": "Packages/User/Scala1.tmTheme",
-    "file_exclude_patterns":
-    [
-        "*.pyc",
-        "*.pyo",
-        "*.exe",
-        "*.dll",
-        "*.obj",
-        "*.o",
-        "*.a",
-        "*.lib",
-        "*.so",
-        "*.dylib",
-        "*.ncb",
-        "*.sdf",
-        "*.suo",
-        "*.pdb",
-        "*.idb",
-        ".DS_Store",
-        "*.class",
-        "*.psd",
-        "*.db",
-        "*.sublime-project",
-        "*.sublime-workspace"
-    ],
-    "folder_exclude_patterns":
-    [
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        "target",
-        "build",
-        "site",
-        ".idea",
-        ".idea_modules"
-    ],
-    "font_face": "Menlo",
-    "font_size": 11.0,
-    "highlight_line": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "line_padding_bottom": 0,
-    "line_padding_top": 0,
-    "rulers":
-    [
-        125
-    ],
-    "scroll_past_end": true,
-    "show_full_path": false,
-    "theme": "Soda Light.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": false,
-    "preview_on_click": true
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Scala1.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-project",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"target",
+		"build",
+		"site",
+		".idea",
+		".idea_modules"
+	],
+	"font_face": "Menlo",
+	"font_size": 11.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"preview_on_click": true,
+	"rulers":
+	[
+		125
+	],
+	"scroll_past_end": true,
+	"show_full_path": false,
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
 }
