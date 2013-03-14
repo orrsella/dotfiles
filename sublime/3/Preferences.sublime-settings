@@ -32,8 +32,6 @@
 		".hg",
 		"CVS",
 		"target",
-		"build",
-		"site",
 		".idea",
 		".idea_modules"
 	],
