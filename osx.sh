@@ -4,37 +4,6 @@
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 #   ~/.osx — http://mths.be/osx
 
-
-
-
-
-# Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
-
-# Show the ~/Library folder.
-chflags nohidden ~/Library
-
-# create subl symlink
-if [ -a /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] ;
-then
-    if [ -L /usr/local/bin/subl ] ;
-    then
-        unlink /usr/local/bin/subl
-    fi
-
-    ln -svFf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-fi
-
-
-
-
-
-
-
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -619,3 +588,17 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
     killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+
+
+
+# create subl symlink
+if [ -a /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] ;
+then
+    if [ -L /usr/local/bin/subl ] ;
+    then
+        unlink /usr/local/bin/subl
+    fi
+
+    ln -svFf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+fi
