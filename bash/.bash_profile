@@ -21,5 +21,3 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 
 function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
 function title () { echo -en "\033]2;$1\007"; } # set terminal title
-
-# some new line
