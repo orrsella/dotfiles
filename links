@@ -21,6 +21,8 @@
 ~/.sbt/build.sbt, /sbt/build.sbt
 ~/.sbt/plugins/plugins.sbt, /sbt/plugins.sbt
 
+# ssh
+
 # sublime
 ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User, /sublime/2
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime/3

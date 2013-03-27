@@ -13,7 +13,8 @@ alias size='du -sh'                             # get folder size
 alias cls='clear'                               # clean screen
 alias bashp='subl ~/.bash_profile'              # shortcut for editing .bash_profile
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
-alias ip='ifconfig en0 | grep "inet "'          # quickly print ip address
+alias ip='ifconfig | grep "inet "'              # quickly print ip address
+alias grep='grep --color=auto'                  # color grep matches
 
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
