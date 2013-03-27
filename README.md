@@ -28,6 +28,8 @@ $ ./symlink.sh
 
 ### OS X
 
+Run `./osx.sh` for some same OS X config settings and other custom setup (like adding the `subl` command for ST).
+
 ## Remove
 
 If you decide you don't want the symlinks anymore, and want the full files in the right locations, run:
