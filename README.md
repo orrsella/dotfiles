@@ -28,7 +28,7 @@ $ ./symlink.sh
 
 ### OS X
 
-Run `./osx.sh` for some same OS X config settings and other custom setup (like adding the `subl` command for ST).
+Run `./osx.sh` for some sane OS X config settings and other custom setup (like adding the `subl` command for ST).
 
 ## Remove
 
@@ -38,13 +38,13 @@ If you decide you don't want the symlinks anymore, and want the full files in th
 $ ./copy.sh
 ```
 
-This will copy every file from `~/.dotfiles` to it's respective place, overriding the symlink.
+This will copy every file from `~/.dotfiles` to it's respective place, overriding the symlinks.
 
 ## Add New File
 
 You can add a new .file (or any other config file for that matter) pretty easily:
 
-1. Copy the existing file to anywhere in the repo, chose the most logical path (the place you save the file in the repo doesn't have to have anything with the actual real path on the system where the original file was – chose whatever's most convenient for you). It makes sense to group multiple related files into appropriately named folders. File names must be identical to the actual ones on the system.
+1. Copy the existing file to anywhere in the repo, chose the most logical path (the place you save the file in the repo doesn't have to correspond to the actual real path on the system where the original file is – chose whatever's most convenient for you). It makes sense to group multiple related files into appropriately named folders. File names must be identical to the actual ones on the system.
 
 2. Add the new file to the `links` file. The format is:
 
