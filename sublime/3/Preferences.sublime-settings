@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Scala1.tmTheme",
+	"color_scheme": "Packages/User/Java.tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
