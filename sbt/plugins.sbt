@@ -9,9 +9,9 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.5.0")
 
 addSbtPlugin("com.jsuereth" % "xsbt-gpg-plugin" % "0.6")
 
-addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.0.4")
+addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.0.5")
 
-addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.1")
+addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.2")
 
 addSbtPlugin("com.eed3si9n" % "sbt-dirty-money" % "0.0.1")
 
