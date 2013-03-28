@@ -1744,7 +1744,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#00FF00</string>
+				<string>#7B00A0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1757,7 +1757,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#586E75</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
