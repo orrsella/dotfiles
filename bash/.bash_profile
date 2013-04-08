@@ -1,6 +1,8 @@
 PATH=/usr/local/sbin:$PATH                      # add /usr/local/sbin to PATH
 export JREBEL_PATH=~/Development/jrebel/jrebel.jar
 
+export PS1="\w $ "                              # set custom shell beginning
+
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
 alias ls='ls -1GAhTl'                           # default format for ls
@@ -12,6 +14,8 @@ alias ..='cd ..'
 alias size='du -sh'                             # get folder size
 alias cls='clear'                               # clean screen
 alias bashp='subl ~/.bash_profile'              # shortcut for editing .bash_profile
+alias editbash='bashp'                          # shortcut for editing .bash_profile
+alias bashprofile='bashp'                       # shortcut for editing .bash_profile
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias grep='grep --color=auto'                  # color grep matches
