@@ -1,12 +1,10 @@
-# IntelliJ shortcuts
+# IntelliJ Shortcuts
 
 ## Legend
 
-⌘ = cmd
-
-^ = ctrl
-
-⌥ = option
+* *⌘* = cmd
+* ^ = ctrl
+* ⌥ = option
 
 ## Edit
 
