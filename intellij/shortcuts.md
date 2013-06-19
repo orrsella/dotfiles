@@ -1,10 +1,12 @@
-IntelliJ shortcuts
+# IntelliJ shortcuts
 
+## Legend
+
+⌘ = cmd
 ^ = ctrl
 ⌥ = option
 
-Edit
-====
+## Edit
 
 cmd+shift+C:    copy file path
 cmd+shift+V:    paste from history
@@ -23,9 +25,7 @@ cmd-F3:         find word at carret
 
 find usages...
 
-
-View
-====
+## View
 
 cmd+1:          show Project pane
 cmd+shift+I:    quick definition
@@ -40,19 +40,14 @@ cmd+D:          compare files seleced in project structure
 ctrl+`:         quick switch scheme (color, code-style, keymap, look-and-feel)
 cmd-shift-P:    show implicit parameters used in function call
 
-
-
-
-Code
-====
+## Code
 
 cmd+L: comment/uncomment (//)
 shift+ctrl+/: comment/uncomment selection (/*)
 /** + enter: start documentation block
 cmd+option+L: reformat code (scope depends if there's a text selection, file selection or folder/module)
 
-Navigage
-========
+## Navigage
 
 cmd+F12: show file structure, with all members. start typing to fiter
 
