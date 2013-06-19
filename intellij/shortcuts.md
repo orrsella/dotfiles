@@ -6,42 +6,50 @@
 * **⌃** = ctrl
 * **⇧** = shift
 * **⌥** = option
+* **↩** = return
 
 ## Edit
 
-```
-⌘⇧C          Copy file path
-⌘⇧V          Paste from history
-⌘D            Duplicate line
-⌘⇧U        Toggle casing
-⌘X or ⌘Y    Delete line
-⌘W          Select word and keep increasing selection as clicked more
-```
+Shortcut | Description |
+--- | ---
+`⌘⇧C` | Copy file path
+`⌘⇧V` | Paste from history
+`⌘⇧C` | Copy file path
+`⌘⇧V` | Paste from history
+`⌘D` | Duplicate line
+`⌘⇧U` | Toggle casing
+`⌘X` / `⌘Y` | Delete line
+`⌘W` | Select word and keep increasing selection
 
-⌘F:          find
-⌘⇧F:    find in path
-⌘R:          replace
-⌘⇧R:    replace in path
-F3 or enter:    find next
-⇧-F3 or ⇧-enter: find previous
-⌘-F3:         find word at carret
+### Find/Replace
 
-find usages...
+Shortcut | Description |
+--- | ---
+`⌘F` | Find
+`⌘⇧F` | Find in path
+`⌘R` | Replace
+`⌘⇧R` | Replace in path
+`F3`/`↩` | Find next
+`⇧F3`/`⇧↩` | Find previous
+`⌘F3` | Find word at carret
+
+### Find Usage
 
 ## View
 
-⌘1:          show Project pane
-⌘⇧I:    quick definition
-⌃J:         quick documentation
-⌘click:      goto definition
-⌘click:      on file - show file directories
-⌘⌃F:     full screen
-⌘P:          get parameter info (when caret is on parameter)
-⌘E:          recent files
-⌘⇧E:    recently changed files
-⌘D:          compare files seleced in project structure
-⌃`:         quick switch scheme (color, code-style, keymap, look-and-feel)
-⌘-⇧-P:    show implicit parameters used in function call
+Shortcut | Description |
+--- | ---
+`⌘1` | Show Project pane
+`⌘⇧I` | Quick definition
+`⌃J` | Quick documentation
+`⌘click` | Goto definition, on file – show file directories
+`⌘⌃F` | Full screen
+`⌘P` | Get parameter info (when caret is on parameter)
+`⌘E` | Recent files
+`⌘⇧E` | Recently changed files
+`⌘D` | Compare files selected in project structure
+`⌃’` | Quick switch scheme (color, code-style, keymap, look-and-feel)
+`⌘⇧P` | Show implicit parameters used in function call
 
 ## Code
 
