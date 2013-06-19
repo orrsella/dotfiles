@@ -2,18 +2,15 @@
 
 ## Legend
 
-* **⌘** = cmd
-* **⌃** = ctrl
-* **⇧** = shift
-* **⌥** = option
-* **↩** = return
+Shortcut | Description |
+--- | ---
+**⌘** | command
+**⌃** | control
+**⇧** | shift
+**⌥** | option
+**↩** | return
 
 ## Edit
-
-* **⌘⇧C** – Copy file path
-* **⌘⇧V** – Paste from history
-* **⌘D** – Duplicate line
-* **⌘⇧U** – Toggle casing
 
 Shortcut | Description |
 --- | ---
@@ -28,13 +25,13 @@ Shortcut | Description |
 
 Shortcut | Description |
 --- | ---
-`⌘F` | Find
-`⌘⇧F` | Find in path
-`⌘R` | Replace
-`⌘⇧R` | Replace in path
-`F3`/`↩` | Find next
-`⇧F3`/`⇧↩` | Find previous
-`⌘F3` | Find word at carret
+**⌘F** | Find
+**⌘⇧F** | Find in path
+**⌘R** | Replace
+**⌘⇧R** | Replace in path
+**F3**/**↩** | Find next
+**⇧F3**/**⇧↩** | Find previous
+**⌘F3** | Find word at carret
 
 ### Find Usage
 
@@ -42,17 +39,17 @@ Shortcut | Description |
 
 Shortcut | Description |
 --- | ---
-`⌘1` | Show Project pane
-`⌘⇧I` | Quick definition
-`⌃J` | Quick documentation
-`⌘click` | Goto definition, on file – show file directories
-`⌘⌃F` | Full screen
-`⌘P` | Get parameter info (when caret is on parameter)
-`⌘E` | Recent files
-`⌘⇧E` | Recently changed files
-`⌘D` | Compare files selected in project structure
-`⌃’` | Quick switch scheme (color, code-style, keymap, look-and-feel)
-`⌘⇧P` | Show implicit parameters used in function call
+**⌘1** | Show Project pane
+**⌘⇧I** | Quick definition
+**⌃J** | Quick documentation
+**⌘click** | Goto definition, on file – show file directories
+**⌘⌃F** | Full screen
+**⌘P** | Get parameter info (when caret is on parameter)
+**⌘E** | Recent files
+**⌘⇧E** | Recently changed files
+**⌘D** | Compare files selected in project structure
+**⌃’** | Quick switch scheme (color, code-style, keymap, look-and-feel)
+**⌘⇧P** | Show implicit parameters used in function call
 
 ## Code
 
