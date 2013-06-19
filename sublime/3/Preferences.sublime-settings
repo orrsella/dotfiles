@@ -42,6 +42,11 @@
 	[
 		"Vintage"
 	],
+	"ignored_words":
+	[
+		"plugin",
+		"plugins"
+	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"preview_on_click": true,

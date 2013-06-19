@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="UISettings">
+    <option name="FONT_FACE" value="AbadiMT-CondensedExtraBold" />
+    <option name="HIDE_TOOL_STRIPES" value="true" />
+    <option name="SHOW_NAVIGATION_BAR" value="false" />
+    <option name="SCROLL_TAB_LAYOUT_IN_EDITOR" value="true" />
+  </component>
+</application>
+

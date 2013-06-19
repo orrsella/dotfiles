@@ -3,7 +3,7 @@
 // xsbt-gpg-plugin, sbt-dirty-money
 resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
 
-addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.1.0")
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.4.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.5.0")
 
