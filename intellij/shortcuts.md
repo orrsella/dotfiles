@@ -10,16 +10,19 @@
 
 ## Edit
 
+* **⌘⇧C** – Copy file path
+* **⌘⇧V** – Paste from history
+* **⌘D** – Duplicate line
+* **⌘⇧U** – Toggle casing
+
 Shortcut | Description |
 --- | ---
-`⌘⇧C` | Copy file path
-`⌘⇧V` | Paste from history
-`⌘⇧C` | Copy file path
-`⌘⇧V` | Paste from history
-`⌘D` | Duplicate line
-`⌘⇧U` | Toggle casing
-`⌘X` / `⌘Y` | Delete line
-`⌘W` | Select word and keep increasing selection
+**⌘⇧C** | Copy file path
+**⌘⇧V** | Paste from history
+**⌘D** | Duplicate line
+**⌘⇧U** | Toggle casing
+**⌘X** / **⌘Y** | Delete line
+**⌘W** | Select word and keep increasing selection
 
 ### Find/Replace
 
