@@ -57,7 +57,7 @@ Shortcut | Description |
 :--- | :---
 **⌘L** | Comment/uncomment (`//`)
 **⇧⌃/** | Comment/uncomment selection (`/*...*/`)
-** /\*\*↩** | Start documentation block
+**/\*\*↩** | Start documentation block
 **⌘⌥L** | Reformat code (scope depends if there's a text selection, file selection or folder/module)
 
 ## Navigate
