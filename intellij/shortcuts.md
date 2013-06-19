@@ -1,12 +1,12 @@
 # IntelliJ shortcuts
 
-## Legend
+### Legend
 
 ⌘ = cmd
 ^ = ctrl
 ⌥ = option
 
-## Edit
+### Edit
 
 cmd+shift+C:    copy file path
 cmd+shift+V:    paste from history
@@ -25,7 +25,7 @@ cmd-F3:         find word at carret
 
 find usages...
 
-## View
+### View
 
 cmd+1:          show Project pane
 cmd+shift+I:    quick definition
