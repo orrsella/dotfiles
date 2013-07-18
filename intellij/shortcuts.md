@@ -9,6 +9,10 @@ Shortcut | Description |
 **⇧** | shift
 **⌥** | option
 **↩** | return
+**←** | left arrow
+**→** | right arrow
+**⌫** | backspace
+
 
 ## General (not IntelliJ related)
 
@@ -65,17 +69,24 @@ Shortcut | Description |
 **⌃J** | Quick documentation
 **⌘P** | Show method signatures (when caret is in braces)
 **⌘⇧P** | Show implicit parameters used in function call
-**⌘ click** | Goto definition, on file – show file directories
+**⌘ click** | Goto definition; click on tab – show file directories
 **⌘E** | Recent files
 **⌘⇧E** | Recently changed files
 **⌘⌃F** | Full screen
 **⌃\`** | Quick switch scheme (color, code-style, keymap, look-and-feel)
 
-
 ## Navigate
 
 Shortcut | Description |
 :--- | :---
+**⌘N** | Goto class
+**⌘⇧N** | Goto file
+**⌘⇧⌥N** | Goto symbol
+**⌘L** | Goto line
+**⌘⌥←** | Back
+**⌘⌥→** | Forward
+**⌘⌥⌫** | Last edit location
+
 **⌘F12** | Show file structure, with all members; start typing to fiter
 
 ## Code
