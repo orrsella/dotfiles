@@ -11,6 +11,8 @@ Shortcut | Description |
 **↩** | return
 **←** | left arrow
 **→** | right arrow
+**↑** | up arrow
+**↓** | down arrow
 **⌫** | backspace
 
 
@@ -94,6 +96,10 @@ Shortcut | Description |
 **⌃H** | Show type hierarchy
 **⌘⇧H** | Show method hierarchy
 **⌃⌥H** | Show call hierarchy
+**F2** | Next highlighted error
+**⇧F2** | Previous highlighted error
+**⌃↓** | Next function/member
+**⌃↑** | Previous function/member
 
 ## Code
 
