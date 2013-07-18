@@ -10,16 +10,23 @@ Shortcut | Description |
 **⌥** | option
 **↩** | return
 
+## General (not IntelliJ related)
+
+cmd-shift-. - show hidden files in open/save dialog
+
 ## Edit
 
 Shortcut | Description |
 :--- | :---
 **⌘⇧C** | Copy file path
 **⌘⇧V** | Paste from history
-**⌘D** | Duplicate line
 **⌘⇧U** | Toggle casing
 **⌘X**, **⌘Y** | Delete line
 **⌘W** | Select word and keep increasing selection
+**⌘⇧W** | Deselect word and keep decreasing selection
+**⌥click-and-drag** | Column selection (same column)
+**⌃⇧J** | Join next line with current one
+**???** | Duplicate line
 
 ### Find/Replace
 
@@ -34,6 +41,13 @@ Shortcut | Description |
 **⌘F3** | Find word at carret
 
 ### Find Usage
+
+Shortcut | Description |
+:--- | :---
+**⌥F7** | Find usages
+**⌘F7** | Find usages in file
+**⌘⇧F7** | Highlight usages in file
+**⌘⌥F7** | Show usages
 
 ## View
 
@@ -51,21 +65,23 @@ Shortcut | Description |
 **⌃\`** | Quick switch scheme (color, code-style, keymap, look-and-feel)
 **⌘⇧P** | Show implicit parameters used in function call
 
-## Code
-
-Shortcut | Description |
-:--- | :---
-**⌘L** | Comment/uncomment (`//`)
-**⇧⌃/** | Comment/uncomment selection (`/*...*/`)
-**/\*\*↩** | Start documentation block
-**⌘⌥L** | Reformat code (scope depends if there's a text selection, file selection or folder/module)
-
 ## Navigate
 
 Shortcut | Description |
 :--- | :---
 **⌘F12** | Show file structure, with all members; start typing to fiter
 
+## Code
+
+Shortcut | Description |
+:--- | :---
+**⌘L** | Comment/uncomment (`//`)
+**⇧⌃/** | Comment/uncomment selection (`/*...*/`)
+**/\*\*↩** | Start class/function documentation block
+**⌘⌥L** | Reformat code (scope depends if there's a text selection, file selection or folder/module)
+
+
 
 ? aligning text
 ? sort strings
+? generate random string
