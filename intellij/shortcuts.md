@@ -63,14 +63,14 @@ Shortcut | Description |
 **⌘1** | Show Project pane
 **⌘⇧I** | Quick definition
 **⌃J** | Quick documentation
-**⌘click** | Goto definition, on file – show file directories
-**⌘⌃F** | Full screen
-**⌘P** | Get parameter info (when caret is on parameter)
+**⌘P** | Show method signatures (when caret is in braces)
+**⌘⇧P** | Show implicit parameters used in function call
+**⌘ click** | Goto definition, on file – show file directories
 **⌘E** | Recent files
 **⌘⇧E** | Recently changed files
-**⌘D** | Compare files selected in project structure
+**⌘⌃F** | Full screen
 **⌃\`** | Quick switch scheme (color, code-style, keymap, look-and-feel)
-**⌘⇧P** | Show implicit parameters used in function call
+
 
 ## Navigate
 
