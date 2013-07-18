@@ -43,7 +43,7 @@ Shortcut | Description |
 :--- | :---
 **⌘F** | Find
 **⌘⇧F** | Find in path
-**⌘G*** | Find next
+**⌘G** | Find next
 **⌘⇧G** | Find previous
 **⌘R** | Replace
 **⌘⇧R** | Replace in path
@@ -52,10 +52,9 @@ Shortcut | Description |
 
 Shortcut | Description |
 :--- | :---
-**⌥F7** | Find usages
-**⌘F7** | Find usages in file
-**⌘⇧F7** | Highlight usages in file
-**⌘⌥F7** | Show usages
+**F3** | Show usages in file
+**⌘F3** | Show usages
+**⌘⇧F3** | Find usages
 
 ## View
 
