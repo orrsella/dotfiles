@@ -69,7 +69,6 @@ Shortcut | Description |
 **⌃J** | Quick documentation
 **⌘P** | Show method signatures (when caret is in braces)
 **⌘⇧P** | Show implicit parameters used in function call
-**⌘ click** | Goto definition; click on tab – show file directories
 **⌘E** | Recent files
 **⌘⇧E** | Recently changed files
 **⌘⌃F** | Full screen
@@ -85,9 +84,16 @@ Shortcut | Description |
 **⌘L** | Goto line
 **⌘⌥←** | Back
 **⌘⌥→** | Forward
-**⌘⌥⌫** | Last edit location
-
-**⌘F12** | Show file structure, with all members; start typing to fiter
+**⌘⇧⌫** | Last edit location
+**⌘ click** | Goto decleration; click on tab – show file directories
+**⌘B** | Goto decleration
+**⌘⌥B** | Goto implementation
+**⌃⇧B** | Goto variable type declaration
+**⌘U** | Goto super method
+**⌘F12** | Show file structure; start typing to fiter
+**⌃H** | Show type hierarchy
+**⌘⇧H** | Show method hierarchy
+**⌃⌥H** | Show call hierarchy
 
 ## Code
 
