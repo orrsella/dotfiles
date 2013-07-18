@@ -43,11 +43,10 @@ Shortcut | Description |
 :--- | :---
 **⌘F** | Find
 **⌘⇧F** | Find in path
+**⌘G*** | Find next
+**⌘⇧G** | Find previous
 **⌘R** | Replace
 **⌘⇧R** | Replace in path
-**F3***, **↩** | Find next
-**⇧F3**, **⇧↩** | Find previous
-**⌘F3** | Find word at carret
 
 ### Find Usage
 
