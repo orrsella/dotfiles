@@ -12,7 +12,9 @@ Shortcut | Description |
 
 ## General (not IntelliJ related)
 
-cmd-shift-. - show hidden files in open/save dialog
+Shortcut | Description |
+:--- | :---
+**⌘⇧.** | Show hidden files in open/save dialog
 
 ## Edit
 
