@@ -20,15 +20,22 @@ Shortcut | Description |
 
 Shortcut | Description |
 :--- | :---
+**⌘Z** | Undo
+**⌘⇧Z** | Redo
+**⌘X** | Cut
+**⌘C** | Copy
 **⌘⇧C** | Copy file path
+**⌘V** | Paste
 **⌘⇧V** | Paste from history
-**⌘⇧U** | Toggle casing
 **⌘X**, **⌘Y** | Delete line
+**⌘A** | Select all
 **⌘W** | Select word and keep increasing selection
 **⌘⇧W** | Deselect word and keep decreasing selection
-**⌥click-and-drag** | Column selection (same column)
+**⌘⇧↩** | Complete current statement
+**⌥ click-and-drag** | Column selection (same column)
 **⌃⇧J** | Join next line with current one
-**???** | Duplicate line
+**⌃D** | Duplicate line
+**⌘⇧U** | Toggle casing
 
 ### Find/Replace
 
