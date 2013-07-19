@@ -13,6 +13,8 @@ Shortcut | Description |
 **→** | right arrow
 **↑** | up arrow
 **↓** | down arrow
+**↖** | fn + left arrow
+**↘** | fn + right arrow
 **⌫** | backspace
 
 
@@ -35,8 +37,8 @@ Shortcut | Description |
 **⌘⇧V** | Paste from history
 **⌘X**, **⌘Y** | Delete line
 **⌘A** | Select all
-**⌘W** | Select word and keep increasing selection
-**⌘⇧W** | Deselect word and keep decreasing selection
+**⌘D** | Select word and keep increasing selection
+**⌘⇧D** | Deselect word and keep decreasing selection
 **⌘⇧↩** | Complete current statement
 **⌥ click-and-drag** | Column selection (same column)
 **⌃⇧J** | Join next line with current one
@@ -87,6 +89,7 @@ Shortcut | Description |
 **⌘⌥←** | Back
 **⌘⌥→** | Forward
 **⌘⇧⌫** | Last edit location
+**⌥↖** | Show nav bar
 **⌘ click** | Goto decleration; click on tab – show file directories
 **⌘B** | Goto decleration
 **⌘⌥B** | Goto implementation
@@ -105,12 +108,21 @@ Shortcut | Description |
 
 Shortcut | Description |
 :--- | :---
+**⌘O** | Override methods
+**⌘I** | Implement methods
+
+
 **⌘L** | Comment/uncomment (`//`)
 **⇧⌃/** | Comment/uncomment selection (`/*...*/`)
 **/\*\*↩** | Start class/function documentation block
 **⌘⌥L** | Reformat code (scope depends if there's a text selection, file selection or folder/module)
 
+## Window
 
+Shortcut | Description |
+:--- | :---
+**↘** | Next tab
+**↖** | Previous tab
 
 ? aligning text
 ? sort strings
