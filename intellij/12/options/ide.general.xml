@@ -2,7 +2,7 @@
 <application>
   <component name="GeneralSettings">
     <option name="browserPath" value="open" />
-    <option name="lastTip" value="22" />
+    <option name="lastTip" value="33" />
     <option name="showTipsOnStartup" value="true" />
     <option name="showOccupiedMemory" value="false" />
     <option name="reopenLastProject" value="true" />
@@ -16,7 +16,7 @@
     <option name="searchInBackground" value="false" />
     <option name="confirmExit" value="false" />
     <option name="confirmOpenNewProject2" value="-1" />
-    <option name="lastProjectLocation" value="$USER_HOME$/Development/IdeaProjects" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Dev/Projects" />
   </component>
 </application>
 
