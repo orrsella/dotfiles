@@ -18,8 +18,10 @@
 ~/.gitignore, /git/.gitignore
 
 # sbt
-~/.sbt/build.sbt, /sbt/build.sbt
-~/.sbt/plugins/plugins.sbt, /sbt/plugins.sbt
+~/.sbt/build.sbt, /sbt/0.12/build.sbt
+~/.sbt/plugins/plugins.sbt, /sbt/0.12/plugins.sbt
+~/.sbt/0.13/build.sbt, /sbt/0.13/build.sbt
+~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
 
 # ssh
 
