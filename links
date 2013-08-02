@@ -13,6 +13,9 @@
 # bash
 ~/.bash_profile, /bash/.bash_profile
 
+# zsh
+~/.zshrc, /zsh/.zshrc
+
 # git
 ~/.gitconfig, /git/.gitconfig
 ~/.gitignore, /git/.gitignore
