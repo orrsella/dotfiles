@@ -2,6 +2,13 @@
 
 A collection of miscellaneous .files (and some regular files). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 
+Important files:
+
+* `links` – The list of files to manage
+* `symlinks.sh` – Setup symlinks
+* `copy.sh` – Destroy symlinks by copying .files over them
+* `osx.sh` – Some OS X configuration
+
 ## Setup
 
 #### Clone
