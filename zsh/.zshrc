@@ -13,18 +13,18 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# set prompt
-PS1=$'\e[0;31m%~ $ \e[0m'
+
+PS1=$'\e[0;31m%~ $ \e[0m'                       # set prompt
 
 # aliases
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
-alias ls='ls -1AGThl' # default format for ls
+alias ls='ls -1AGThl'                           # default format for ls
 alias l='ls'                                    # make l also work for ls
 alias cdd='ccd'                                 # in case you confuse ccd and cdd
 alias mkdir='mkdir -p'                          # creat dirs recursively
 alias ln='ln -v'                                # make ln verbose
-alias ..='cd ..'
+alias ..='cd ..'                                # make .. go up a folder
 alias size='du -sh'                             # get folder size
 alias cls='clear'                               # clean screen
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
