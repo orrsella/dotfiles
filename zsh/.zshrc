@@ -13,9 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# set prompt
+PS1=$'\e[0;31m%~ $ \e[0m'
 
-PS1=$'\e[0;31m%~ $ \e[0m' # set custom promps
-
+# aliases
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
 alias ls='ls -1AGThl' # default format for ls
@@ -26,9 +27,6 @@ alias ln='ln -v'                                # make ln verbose
 alias ..='cd ..'
 alias size='du -sh'                             # get folder size
 alias cls='clear'                               # clean screen
-alias bashp='subl ~/.bash_profile'              # shortcut for editing .bash_profile
-alias editbash='bashp'                          # shortcut for editing .bash_profile
-alias bashprofile='bashp'                       # shortcut for editing .bash_profile
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias grep='grep --color=auto'                  # color grep matches
@@ -38,3 +36,14 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 
 function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
 function title () { echo -en "\033]2;$1\007"; } # set terminal title
+
+# git
+function gca {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
+alias gs='git status'
+alias gaa='git add .'
+alias gp='git push'
