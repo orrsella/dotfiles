@@ -7,5 +7,12 @@
       <mapping ext="tagx" type="XML" />
     </extensionMap>
   </component>
+  <component name="FileTypeManager" version="11">
+    <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;" />
+    <extensionMap>
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
 </application>
 

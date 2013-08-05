@@ -3,6 +3,12 @@
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="meta W" />
   </action>
+  <action id="CommentByBlockComment">
+    <keyboard-shortcut first-keystroke="meta alt SLASH" />
+  </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="meta SLASH" />
+  </action>
   <action id="CompareDirs" />
   <action id="CompareJars" />
   <action id="CompareTwoFiles" />
@@ -76,6 +82,9 @@
   </action>
   <action id="HighlightUsagesInFile">
     <keyboard-shortcut first-keystroke="F3" />
+  </action>
+  <action id="Images.Editor.ActualSize">
+    <keyboard-shortcut first-keystroke="meta DIVIDE" />
   </action>
   <action id="Images.ShowThumbnails" />
   <action id="IncrementWindowHeight" />

@@ -1,2 +1,4 @@
 com.intellij
+SBT
 org.intellij.scala
+Shifter
