@@ -1,6 +1,7 @@
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore
+	autocrlf = input
 [user]
 	name = Orr Sella
 	email = orrsella@gmail.com
@@ -15,6 +16,7 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
+	keepBackup = true
 [merge]
 	tool = Kaleidoscope
 [github]
