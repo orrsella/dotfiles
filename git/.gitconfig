@@ -1,6 +1,6 @@
 [core]
 	quotepath = false
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.git/.gitignore
 	autocrlf = input
 [user]
 	name = Orr Sella
