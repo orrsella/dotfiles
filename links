@@ -18,7 +18,8 @@
 
 # git
 ~/.gitconfig, /git/.gitconfig
-~/.gitignore, /git/.gitignore
+~/.git/.gitignore, /git/.gitignore
+~/.git/templates/hooks/pre-commit, /git/hooks/pre-commit
 
 # sbt
 ~/.sbt/build.sbt, /sbt/0.12/build.sbt

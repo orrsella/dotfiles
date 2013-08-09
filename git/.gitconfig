@@ -4,7 +4,6 @@
 	autocrlf = input
 [user]
 	name = Orr Sella
-	email = orrsella@gmail.com
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
@@ -21,3 +20,5 @@
 	tool = Kaleidoscope
 [github]
 	user = orrsella
+[init]
+	templatedir = ~/.git/templates
