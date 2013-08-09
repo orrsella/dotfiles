@@ -19,7 +19,7 @@
 # git
 ~/.gitconfig, /git/.gitconfig
 ~/.git/.gitignore, /git/.gitignore
-~/.git/templates/hooks/pre-commit, /git/hooks/pre-commit
+~/.git/templates, /git/templates
 
 # sbt
 ~/.sbt/build.sbt, /sbt/0.12/build.sbt
