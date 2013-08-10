@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# A git hook to make sure user.email exists before comitting
+# A git hook to make sure user.email exists before committing
 
 EMAIL=$(git config user.email)
 
