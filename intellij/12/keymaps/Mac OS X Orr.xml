@@ -73,6 +73,10 @@
   </action>
   <action id="FindUsagesInFile" />
   <action id="FindWordAtCaret" />
+  <action id="GotoClass">
+    <keyboard-shortcut first-keystroke="meta N" />
+    <keyboard-shortcut first-keystroke="meta T" />
+  </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="meta L" />
   </action>
@@ -131,6 +135,10 @@
   </action>
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="control alt UP" />
+  </action>
+  <action id="Vcs.UpdateProject" />
+  <action id="XDebugger.JumpToSource">
+    <keyboard-shortcut first-keystroke="shift meta J" />
   </action>
 </keymap>
 
