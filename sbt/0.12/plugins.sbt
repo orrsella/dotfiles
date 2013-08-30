@@ -5,7 +5,7 @@ resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline
 
 addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.5.1")
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.5.0")
+addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.6.2")
 
 addSbtPlugin("com.jsuereth" % "xsbt-gpg-plugin" % "0.6")
 
