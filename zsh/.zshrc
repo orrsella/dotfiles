@@ -30,6 +30,10 @@ alias cls='clear'                               # clean screen
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias grep='grep --color=auto'                  # color grep matches
+alias tojson='python -mjson.tool'               # print pretty json
+alias count='wc -l'                             # count lines
+alias diskusg='df -H -l'                        # show available disk space
+
 
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
