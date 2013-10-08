@@ -14,7 +14,7 @@ compinit
 # End of lines added by compinstall
 
 
-PS1=$'\e[0;30m[%D{%Y-%m-%d %H:%M:%S}] \e[0;31m%~ $ \e[0m'                       # set prompt
+PS1=$'\e[0;30m[%D{%Y-%m-%d %H:%M:%S}] \e[0;31m%~ $ \e[0m' # set prompt
 
 # aliases
 alias back='cd -'                               # go back one folder
