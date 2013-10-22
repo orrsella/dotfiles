@@ -14,6 +14,8 @@ compinit
 # End of lines added by compinstall
 
 
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
+
 PS1=$'\e[0;30m[%D{%Y-%m-%d %H:%M:%S}] \e[0;31m%~ $ \e[0m' # set prompt
 
 # aliases
@@ -51,3 +53,6 @@ function gca {
 alias gs='git status'
 alias gaa='git add .'
 alias gp='git push'
+
+
+function googlebot() { echo "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" }
