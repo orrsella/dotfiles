@@ -34,8 +34,16 @@ alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias grep='grep --color=auto'                  # color grep matches
 alias tojson='python -mjson.tool'               # print pretty json
 alias toJson=tojson
+alias toxml='xmllint --format -'
+alias toXml=toxml
+alias tohtml='xmllint --html -'
+alias toHtml=tohtml
 alias count='wc -l'                             # count lines
 alias diskusg='df -H -l'                        # show available disk space
+alias copy='pbcopy'
+alias paste='pbpaste'
+alias zshrc='subl ~/.zshrc'
+alias copyjson='paste | tojson | copy'
 
 
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
@@ -58,3 +66,6 @@ alias gp='git push'
 
 function googlebot() { echo "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" }
 function useragent() { echo "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36" }
+function clone-template() { git clone git@github.com:orrsella/scala-template.git }
+
+function startelastic() { elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml }
