@@ -1,0 +1,2 @@
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"

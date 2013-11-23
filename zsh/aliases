@@ -1,0 +1,57 @@
+# filesystem, navigation, terminal
+alias back='cd -'                               # go back one folder
+alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
+alias ls='ls -1AGThl'                           # default format for ls
+alias l='ls'                                    # make l also work for ls
+alias cdd='ccd'                                 # in case you confuse ccd and cdd
+alias mkdir='mkdir -p'                          # creat dirs recursively
+alias ln='ln -v'                                # make ln verbose
+alias ..='cd ..'                                # make .. go up a folder
+alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
+alias cls='clr'                                 # clean screen
+
+# helpers (defaults)
+alias grep='grep --color=auto'                  # color grep matches
+alias count='wc -l'                             # count lines
+alias size='du -sh'                             # get folder size
+alias sizerecurse='du -h -c'                    # get and print folder size for all folders, recursively
+alias disks='df -H -l'                          # show available disk space
+alias ip='ifconfig | grep "inet "'              # quickly print ip address
+alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
+
+# subl
+alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
+alias zshrc='subl ~/.zshrc'
+
+# text formatting, copy/paste
+alias copy='pbcopy'
+alias paste='pbpaste'
+alias tojson='python -mjson.tool'               # pretty print json
+alias toxml='xmllint --format -'                # pretty print xml
+alias tohtml='xmllint --html -'                 # pretty print html
+alias copyjson='paste | tojson | copy'          # prettify copied json
+alias copyxml='paste | toxml | copy'            # prettify copied xml
+alias copyhtml='paste | tohtml | copy'          # prettify copied html
+alias diff='diff --side-by-side --suppress-common-lines -W 150'
+
+# mac helpers
+alias showhidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
+alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'    # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
+
+# curl for useragents
+alias ie6curl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)\""
+alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
+alias chcurl="curl -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36\""
+alias gbcurl="curl -H \"User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\""
+
+# git
+alias gs='git status'
+alias gaa='git add .'
+alias gp='git push'
+
+# misc
+alias googlebot='gbua'
+alias clone-template='git clone git@github.com:orrsella/scala-template.git'
+alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"''
+#alias wssh='ssh -p41278'

@@ -1,0 +1,8 @@
+# set prompt
+PS1=$'\e[0;30m[%D{%Y-%m-%d %H:%M:%S}] \e[0;31m%~ $ \e[0m'
+
+if [ `which fortune` ]; then
+    echo ""
+    fortune
+    echo ""
+fi

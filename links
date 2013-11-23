@@ -15,6 +15,10 @@
 
 # zsh
 ~/.zshrc, /zsh/.zshrc
+~/.zsh/aliases, /zsh/aliases
+~/.zsh/functions, /zsh/functions
+~/.zsh/prompt, /zsh/prompt
+~/.zsh/variables, /zsh/variables
 
 # git
 ~/.gitconfig, /git/.gitconfig

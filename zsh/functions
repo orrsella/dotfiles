@@ -1,0 +1,98 @@
+function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
+function title () { echo -en "\033]2;$1\007"; } # set terminal title
+
+function servethis () {
+    open "http://localhost:8000";
+    python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()';
+}
+
+# TODO: this section
+# copy useragents
+#function copyuseragent()
+function gbua() {
+    UA="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+    echo $UA | pbcopy
+    echo $UA
+}
+
+function chua() {
+    UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36"
+    echo $UA | pbcopy
+    echo $UA
+}
+
+
+# ssh
+add_auth_key () {
+    ssh-copy-id $@
+}
+
+# extract any archive format
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)        tar xjf $1        ;;
+            *.tar.gz)         tar xzf $1        ;;
+            *.bz2)            bunzip2 $1        ;;
+            *.rar)            unrar x $1        ;;
+            *.gz)             gunzip $1         ;;
+            *.tar)            tar xf $1         ;;
+            *.tbz2)           tar xjf $1        ;;
+            *.tgz)            tar xzf $1        ;;
+            *.zip)            unzip $1          ;;
+            *.Z)              uncompress $1     ;;
+            *)                echo "'$1' cannot be extracted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+# grep
+dgrep() {
+    # A recursive, case-insensitive grep that excludes binary files
+    grep -iR "$@" * | grep -v "Binary"
+}
+dfgrep() {
+    # A recursive, case-insensitive grep that excludes binary files
+    # and returns only unique filenames
+    grep -iR "$@" * | grep -v "Binary" | sed 's/:/ /g' | awk '{ print $1 }' | sort | uniq
+}
+psgrep() {
+    if [ ! -z $1 ] ; then
+        echo "Grepping for processes matching $1..."
+        ps aux | grep $1 | grep -v grep
+    else
+        echo "!! Need name to grep for"
+    fi
+}
+
+
+
+killit() {
+    # Kills any process that matches a regexp passed to it
+    ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill
+}
+
+
+
+ips () {
+    # determine local IP address
+    ifconfig | grep "inet " | awk '{ print $2 }'
+}
+
+
+
+# git
+function gca {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
+
+# start processes
+function elasticstart() { elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml }
+function zincstart() { zinc -nailed -port 3030 -start }
+
+function wssh { ssh -p41278 $@ }
