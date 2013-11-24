@@ -40,10 +40,13 @@ alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles NO && killal
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'    # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 
 # curl for useragents
-alias ie6curl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)\""
-alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
-alias chcurl="curl -H \"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36\""
-alias gbcurl="curl -H \"User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\""
+alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"'
+alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
+alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
+alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
+
+# curl
+alias headers='curl -I '
 
 # git
 alias gs='git status'
@@ -56,3 +59,4 @@ alias clone-template='git clone git@github.com:orrsella/scala-template.git'
 alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"'
 alias rand='openssl rand -hex 16'
 alias randn='openssl rand -hex '
+alias free='ruby ~/.zsh/scripts/free-memory.rb'
