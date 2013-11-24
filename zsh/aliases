@@ -21,7 +21,7 @@ alias ping='ping -c 5'                          # pings with 5 packets, not unli
 
 # subl
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
-#alias zshrc='subl ~/.zsh/zsh.sublime-project ~/.zshrc'
+alias zshrc='subl ~/.zsh/zsh.sublime-project ~/.zshrc'
 
 # text formatting, copy/paste
 alias copy='pbcopy'

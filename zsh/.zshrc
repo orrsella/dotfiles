@@ -19,3 +19,7 @@ zstyle :compinstall filename '/Users/orr/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+
+## case-insensitive (all),partial-word and then substring completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
