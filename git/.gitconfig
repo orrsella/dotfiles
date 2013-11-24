@@ -22,3 +22,5 @@
 	user = orrsella
 [init]
 	templatedir = ~/.git/templates
+[push]
+	default = simple
