@@ -19,6 +19,7 @@
 ~/.zsh/functions, /zsh/functions
 ~/.zsh/prompt, /zsh/prompt
 ~/.zsh/variables, /zsh/variables
+~/.zsh/zsh.sublime-project, /zsh/zsh.sublime-project
 
 # git
 ~/.gitconfig, /git/.gitconfig
