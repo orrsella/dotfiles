@@ -21,7 +21,7 @@ alias ping='ping -c 5'                          # pings with 5 packets, not unli
 
 # subl
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
-alias zshrc='subl ~/.zshrc'
+#alias zshrc='subl ~/.zsh/zsh.sublime-project ~/.zshrc'
 
 # text formatting, copy/paste
 alias copy='pbcopy'
@@ -53,5 +53,6 @@ alias gp='git push'
 # misc
 alias googlebot='gbua'
 alias clone-template='git clone git@github.com:orrsella/scala-template.git'
-alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"''
-#alias wssh='ssh -p41278'
+alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"'
+alias rand='openssl rand -hex 16'
+alias randn='openssl rand -hex '
