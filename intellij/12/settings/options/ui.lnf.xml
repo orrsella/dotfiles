@@ -2,11 +2,13 @@
 <application>
   <component name="UISettings">
     <option name="FONT_FACE" value="AbadiMT-CondensedExtraBold" />
-    <option name="EDITOR_TAB_LIMIT" value="20" />
+    <option name="EDITOR_TAB_LIMIT" value="30" />
     <option name="HIDE_TOOL_STRIPES" value="true" />
     <option name="SHOW_NAVIGATION_BAR" value="false" />
+    <option name="SCROLL_TAB_LAYOUT_IN_EDITOR" value="true" />
     <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
     <option name="ACTIVATE_RIGHT_EDITOR_ON_CLOSE" value="true" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="23" />
   </component>
 </application>
 

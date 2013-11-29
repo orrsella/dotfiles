@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <keymap version="1" name="Mac OS X Orr" parent="Mac OS X">
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="shift meta alt A" />
+  </action>
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="meta W" />
   </action>
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="meta alt SLASH" />
+    <keyboard-shortcut first-keystroke="control meta SLASH" />
   </action>
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="meta SLASH" />
@@ -14,7 +18,11 @@
   <action id="CompareTwoFiles" />
   <action id="Console.History.Next" />
   <action id="Console.History.Previous" />
+  <action id="Console.TableResult.NextPage" />
   <action id="DecrementWindowHeight" />
+  <action id="Diff.SelectedChange">
+    <keyboard-shortcut first-keystroke="meta N" />
+  </action>
   <action id="Diff.UpdatedFiles" />
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="control D" />
@@ -73,16 +81,23 @@
   </action>
   <action id="FindUsagesInFile" />
   <action id="FindWordAtCaret" />
-  <action id="GotoClass">
-    <keyboard-shortcut first-keystroke="meta N" />
-    <keyboard-shortcut first-keystroke="meta T" />
+  <action id="GotoImplementation">
+    <keyboard-shortcut first-keystroke="meta alt B" />
+    <mouse-shortcut keystroke="meta alt button1" />
+    <keyboard-shortcut first-keystroke="meta alt DOWN" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="meta L" />
   </action>
-  <action id="GotoTest" />
+  <action id="GotoTest">
+    <keyboard-shortcut first-keystroke="meta T" />
+  </action>
   <action id="GuiDesigner.Duplicate">
     <keyboard-shortcut first-keystroke="control D" />
+  </action>
+  <action id="HideActiveWindow">
+    <keyboard-shortcut first-keystroke="shift ESCAPE" />
+    <keyboard-shortcut first-keystroke="meta W" />
   </action>
   <action id="HighlightUsagesInFile">
     <keyboard-shortcut first-keystroke="F3" />
@@ -91,6 +106,9 @@
     <keyboard-shortcut first-keystroke="meta DIVIDE" />
   </action>
   <action id="Images.ShowThumbnails" />
+  <action id="Images.Thumbnails.Hide">
+    <keyboard-shortcut first-keystroke="meta F4" />
+  </action>
   <action id="IncrementWindowHeight" />
   <action id="MethodDown">
     <keyboard-shortcut first-keystroke="alt DOWN" />
@@ -100,6 +118,7 @@
   </action>
   <action id="MoveStatementDown" />
   <action id="MoveStatementUp" />
+  <action id="NextOccurence" />
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="END" />
   </action>
@@ -136,9 +155,18 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="control alt UP" />
   </action>
+  <action id="Switcher">
+    <keyboard-shortcut first-keystroke="control TAB" />
+    <keyboard-shortcut first-keystroke="shift control TAB" />
+    <keyboard-shortcut first-keystroke="control E" />
+  </action>
   <action id="Vcs.UpdateProject" />
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="shift meta J" />
+  </action>
+  <action id="linessorter.sort">
+    <keyboard-shortcut first-keystroke="shift alt L" />
+    <keyboard-shortcut first-keystroke="shift meta alt PERIOD" />
   </action>
 </keymap>
 
