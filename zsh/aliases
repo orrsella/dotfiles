@@ -38,6 +38,8 @@ alias diff='diff --side-by-side --suppress-common-lines -W 150'
 alias showhidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
 alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'    # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
+alias trash='sudo rm -rf ~/.Trash'
+alias cleantest='rm -rf /tmp/test-mxj'
 
 # curl for useragents
 alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"'
@@ -56,7 +58,7 @@ alias gp='git push'
 # misc
 alias googlebot='gbua'
 alias clone-template='git clone git@github.com:orrsella/scala-template.git'
-alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"'
+alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy'
 alias rand='openssl rand -hex 16'
 alias randn='openssl rand -hex '
 alias randb64='openssl rand -base64 16'
@@ -65,6 +67,7 @@ alias free='ruby ~/.zsh/scripts/free-memory.rb'
 alias line='printf "%100s\n" | tr " " ='
 alias unique='uniq'
 alias kdiff='ksdiff'
+alias checksum='md5'
 
 # start processes
 alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'

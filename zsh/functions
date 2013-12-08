@@ -93,3 +93,11 @@ function gca {
 
 
 function wssh { ssh -p41278 $@ }
+
+function ding(){
+  if [[ $? != 0 ]] ; then
+    afplay /System/Library/Sounds/Basso.aiff
+  else
+    afplay /System/Library/Sounds/Glass.aiff
+  fi
+}
