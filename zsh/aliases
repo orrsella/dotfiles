@@ -14,7 +14,7 @@ alias cls='clr'                                 # clean screen
 alias grep='grep --color=auto'                  # color grep matches
 alias count='wc -l'                             # count lines
 alias size='du -sh'                             # get folder size
-alias sizerecurse='du -h -c'                    # get and print folder size for all folders, recursively
+alias sizer='du -h -c'                          # get and print folder size for all folders, recursively
 alias disks='df -H -l'                          # show available disk space
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
@@ -82,3 +82,11 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
 alias elasticstop='curl -XPOST http://localhost:9200/_shutdown'
 alias zincstart='zinc -nailed -port 3030 -start'
+
+# folders
+alias dev='cd ~/Dev'
+alias docs='cd ~/Dropbox/Documents'
+alias projects='cd ~/Dev/Projects'
+alias wix='cd ~/Dev/Wix'
+alias dl='cd ~/Downloads'
+alias dp='cd ~/Dropbox'
