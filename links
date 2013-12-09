@@ -13,14 +13,8 @@
 # bash
 ~/.bash_profile, /bash/.bash_profile
 
-# zsh
-~/.zshrc, /zsh/.zshrc
-~/.zsh/aliases, /zsh/aliases
-~/.zsh/functions, /zsh/functions
-~/.zsh/prompt, /zsh/prompt
-~/.zsh/variables, /zsh/variables
-~/.zsh/zsh.sublime-project, /zsh/zsh.sublime-project
-~/.zsh/scripts, /zsh/scripts
+# brew
+~/.brew, /brew/.brew
 
 # git
 ~/.gitconfig, /git/.gitconfig
@@ -38,5 +32,14 @@
 # sublime
 ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User, /sublime/2
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime/3
+
+# zsh
+~/.zshrc, /zsh/.zshrc
+~/.zsh/aliases, /zsh/aliases
+~/.zsh/functions, /zsh/functions
+~/.zsh/prompt, /zsh/prompt
+~/.zsh/variables, /zsh/variables
+~/.zsh/zsh.sublime-project, /zsh/zsh.sublime-project
+~/.zsh/scripts, /zsh/scripts
 
 # make sure to keep an empty line at the end:

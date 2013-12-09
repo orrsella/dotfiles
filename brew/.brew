@@ -1,5 +1,6 @@
 autoconf
 automake
+brew-cask
 elasticsearch
 fortune
 fuse4x
@@ -17,6 +18,7 @@ maven
 mongodb
 mysql
 netcat
+ngrep
 nmap
 openssl
 pcre

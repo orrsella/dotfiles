@@ -35,20 +35,27 @@ alias copyhtml='paste | tohtml | copy'          # prettify copied html
 alias diff='diff --side-by-side --suppress-common-lines -W 150'
 
 # mac helpers
-alias showhidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
-alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
+alias show="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'    # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
-alias trash='sudo rm -rf ~/.Trash'
-alias cleantest='rm -rf /tmp/test-mxj'
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
-# curl for useragents
+# curl
 alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"'
 alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
 alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
 alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
-
-# curl
 alias headers='curl -I '
+
+# http & web
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias whois="whois -h whois-servers.net"
+alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
+
 
 # git
 alias gs='git status'
@@ -68,6 +75,8 @@ alias line='printf "%100s\n" | tr " " ='
 alias unique='uniq'
 alias kdiff='ksdiff'
 alias checksum='md5'
+alias cleantest='rm -rf /tmp/test-mxj'
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # start processes
 alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
