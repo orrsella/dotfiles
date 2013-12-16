@@ -11,7 +11,7 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.1") // for sbt 0.13.0+
 
 addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.0.9")
 
-// addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.5")
+addSbtPlugin("com.orrsella" % "sbt-stats" % "1.0.5")
 
 // addSbtPlugin("com.eed3si9n" % "sbt-dirty-money" % "0.0.1")
 
