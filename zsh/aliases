@@ -56,11 +56,12 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 alias whois="whois -h whois-servers.net"
 alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-
 # git
 alias gs='git status'
-alias gaa='git add .'
-alias gp='git push'
+alias ga='git add -A'
+alias gp='git push origin HEAD'
+alias gd='git difftool'
+alias gc='git commit -m'
 
 # misc
 alias googlebot='gbua'
