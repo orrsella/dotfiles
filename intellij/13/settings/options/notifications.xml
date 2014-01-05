@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Test Runner" displayType="NONE" />
+    <notification groupId="Compiler" displayType="NONE" />
+    <notification groupId="Git Messages" displayType="TOOL_WINDOW" />
+    <notification groupId="Common Version Control Messages" displayType="TOOL_WINDOW" />
+    <notification groupId="External Executable Critical Failures" displayType="TOOL_WINDOW" />
+    <notification groupId="Clean artifact" />
+    <notification groupId="FindInPath" displayType="TOOL_WINDOW" shouldLog="false" />
+    <notification groupId="Grape" />
+    <notification groupId="Framework Detection" />
+    <notification groupId="Git Minor Notifications" />
+    <notification groupId="Git Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Maven Import" displayType="STICKY_BALLOON" />
+    <notification groupId="IDE Usage Statistics" displayType="STICKY_BALLOON" shouldLog="false" />
+    <notification groupId="Groovy DSL errors" />
+    <notification groupId="HotSwap" displayType="TOOL_WINDOW" />
+    <notification groupId="JavaEE" displayType="TOOL_WINDOW" />
+    <notification groupId="Error Report" />
+    <notification groupId="Plugin Error" />
+    <notification groupId="update.available.group" displayType="STICKY_BALLOON" />
+    <notification groupId="Plugins Lifecycle Group" />
+    <notification groupId="File type recognized" />
+    <notification groupId="IDE Fatal Errors" displayType="NONE" />
+    <notification groupId="Maven" />
+    <notification groupId="System Messages" />
+    <notification groupId="scala" />
+    <notification groupId="Project Loading Error" />
+    <notification groupId="Debugger messages" displayType="TOOL_WINDOW" shouldLog="false" />
+    <notification groupId="Execution" displayType="NONE" />
+    <notification groupId="Load Error" />
+    <notification groupId="JavaScript Library Management" displayType="STICKY_BALLOON" />
+    <notification groupId="Vcs Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Vcs Minor Notifications" />
+    <notification groupId="Plugins Suggestion" displayType="STICKY_BALLOON" />
+    <notification groupId="IDETalk XmlRpc Server" displayType="STICKY_BALLOON" />
+    <notification groupId="notification.group.id.sbt" displayType="TOOL_WINDOW" />
+    <notification groupId="Spring Configuration Check" displayType="STICKY_BALLOON" />
+    <notification groupId="Update Checker" displayType="STICKY_BALLOON" />
+    <toolWindow group="Git Messages" />
+    <toolWindow group="External Executable Critical Failures" />
+    <toolWindow group="FindInPath" />
+    <toolWindow group="Common Version Control Messages" />
+    <toolWindow group="HotSwap" />
+    <toolWindow group="Debugger messages" />
+    <toolWindow group="JavaEE" />
+    <toolWindow group="notification.group.id.sbt" />
+  </component>
+</application>
+

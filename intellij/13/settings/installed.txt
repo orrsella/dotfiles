@@ -1,0 +1,5 @@
+com.intellij
+net.nicoulaj.idea.markdown
+org.sylfra.idea.plugins.linessorter
+org.intellij.scala
+com.intellij.scala.play2template
