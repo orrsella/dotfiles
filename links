@@ -21,6 +21,9 @@
 ~/.git/.gitignore, /git/.gitignore
 ~/.git/templates, /git/templates
 
+# maven
+~/.mavenrc, /maven/.mavenrc
+
 # sbt
 ~/.sbt/build.sbt, /sbt/0.12/build.sbt
 ~/.sbt/plugins/plugins.sbt, /sbt/0.12/plugins.sbt
