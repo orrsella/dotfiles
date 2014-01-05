@@ -1,0 +1,3 @@
+[
+    { "keys": ["alt+w"], "command": "show_scala_worksheet" }
+]
