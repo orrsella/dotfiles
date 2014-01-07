@@ -1,3 +1,5 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme)](https://github.com/igrigorik/ga-beacon)
+
 ## dotfiles
 
 A collection of miscellaneous .files (and some regular files). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
