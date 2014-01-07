@@ -1,5 +1,3 @@
-[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme?pixel)](https://github.com/igrigorik/ga-beacon)
-
 ## dotfiles
 
 A collection of miscellaneous .files (and some regular files). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
@@ -63,3 +61,5 @@ You can add a new .file (or any other config file for that matter) pretty easily
 ```
 
 See `links` for more details and examples.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme?pixel)](https://github.com/igrigorik/ga-beacon)
