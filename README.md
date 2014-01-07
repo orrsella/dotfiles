@@ -1,4 +1,4 @@
-[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 
 ## dotfiles
 
