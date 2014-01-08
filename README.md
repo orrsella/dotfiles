@@ -61,5 +61,3 @@ You can add a new .file (or any other config file for that matter) pretty easily
 ```
 
 See `links` for more details and examples.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/dotfiles/readme?pixel)](https://github.com/igrigorik/ga-beacon)
