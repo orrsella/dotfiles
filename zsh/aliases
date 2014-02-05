@@ -48,10 +48,11 @@ alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows N
 alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
 alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
 alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
-alias headers='curl -I '
+alias head='curl -I '
 
 # http & web
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias encode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias decode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 alias whois="whois -h whois-servers.net"

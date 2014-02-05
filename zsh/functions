@@ -101,3 +101,11 @@ function ding(){
     afplay /System/Library/Sounds/Glass.aiff
   fi
 }
+
+function goto() {
+    cd `which $1`/../
+}
+
+function headers() {
+    curl $1 -o /dev/null -v
+}
