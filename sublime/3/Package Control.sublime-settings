@@ -1,10 +1,10 @@
 {
 	"installed_packages":
 	[
-        "Package Control",
-        "Pretty JSON",
-        "ScalaWorksheet",
-        "Theme - Soda",
-        "Theme - Spacegray"
+		"Package Control",
+		"Pretty JSON",
+		"ScalaWorksheet",
+		"Theme - Soda",
+		"Theme - Spacegray"
 	]
 }
