@@ -1,3 +1,5 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.0.0-p195/bin:$PATH"
 export MAVEN_OPTS="-Xmx1g -XX:MaxPermSize=512m"
 export EDITOR="subl -w"
+export GOPATH=$HOME/Dev/go
+export PATH=$PATH:$GOPATH/bin
