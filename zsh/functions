@@ -109,3 +109,7 @@ function goto() {
 function headers() {
     curl $1 -o /dev/null -v
 }
+
+function manpdf() {
+    man -t $1 | open -f -a Preview.app
+}
