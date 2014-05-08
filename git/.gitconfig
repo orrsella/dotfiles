@@ -4,7 +4,7 @@
 	autocrlf = input
 [user]
 	name = Orr Sella
-	email = "(none)"
+	email = (none)
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
