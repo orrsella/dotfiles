@@ -1,5 +1,6 @@
-function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
-function title () { echo -en "\033]2;$1\007"; } # set terminal title
+function ccd() { mkdir -p $1 && cd $1; }       # create and change dir
+function title() { echo -en "\033]2;$1\007"; } # set terminal title
+function chmox() { chmod +x $1 }
 
 function servethis () {
     open "http://localhost:8000";
@@ -41,6 +42,7 @@ extract () {
             *.tgz)            tar xzf $1        ;;
             *.zip)            unzip $1          ;;
             *.jar)            unzip $1          ;;
+            *.war)            unzip $1          ;;
             *.Z)              uncompress $1     ;;
             *)                echo "'$1' cannot be extracted via extract()" ;;
         esac
