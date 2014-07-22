@@ -1,6 +1,6 @@
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfuture", "-Xlint")
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"/*, "-Xfuture", "-Xlint"*/)
 
-incOptions := incOptions.value.withNameHashing(true)
+// incOptions := incOptions.value.withNameHashing(true)
 
 shellPrompt in ThisBuild := { state =>
   (name         in Project.extract(state).currentRef get Project.extract(state).structure.data).getOrElse("") + "_scala-" +
