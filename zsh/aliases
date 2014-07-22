@@ -2,7 +2,7 @@
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
 alias ls='ls -1AGThl'                           # default format for ls
-alias l='ls'                                    # make l also work for ls
+alias ll='ls -1AGThl'                           # make l also work for ls
 alias cdd='ccd'                                 # in case you confuse ccd and cdd
 alias mkdir='mkdir -p'                          # creat dirs recursively
 alias ln='ln -v'                                # make ln verbose
@@ -33,7 +33,7 @@ alias tohtml='xmllint --html -'                 # pretty print html
 alias copyjson='paste | tojson | copy'          # prettify copied json
 alias copyxml='paste | toxml | copy'            # prettify copied xml
 alias copyhtml='paste | tohtml | copy'          # prettify copied html
-alias diff='diff --side-by-side --suppress-common-lines -W 150'
+alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 
 # mac helpers
 alias show="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
@@ -48,7 +48,10 @@ alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows N
 alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
 alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
 alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
-alias headers='curl -I '
+#alias headers='curl -I '
+
+# httpie
+alias headers='http -p Hh '
 
 # http & web
 alias encode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
@@ -80,6 +83,7 @@ alias kdiff='ksdiff'
 alias checksum='md5'
 alias cleantest='rm -rf /tmp/test-mxj'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+alias sum="xargs | tr ' ' '+' | bc"
 
 # start processes
 alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
