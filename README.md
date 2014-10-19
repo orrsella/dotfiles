@@ -15,7 +15,7 @@ Important files:
 
 Clone to a local directory, like `~/.dotfiles`, and set scripts as executable:
 
-```
+```bash
 $ cd ~
 $ git clone https://github.com/orrsella/dotfiles.git
 $ mv dotfiles .dotfiles
@@ -29,7 +29,7 @@ $ chmod +x osx.sh
 
 This will *override* all existing files with a symlink to the new repository, losing anything you have in current files. If you have any important configuration in current .files, make sure to *first* save it to the cloned repo, and only then run the script:
 
-```
+```bash
 $ ./symlink.sh
 ```
 
@@ -41,7 +41,7 @@ Run `./osx.sh` for some sane OS X config settings and other custom setup (like a
 
 If you decide you don't want the symlinks anymore, and want the full files in the right locations, run:
 
-```
+```bash
 $ ./copy.sh
 ```
 
@@ -61,3 +61,11 @@ You can add a new .file (or any other config file for that matter) pretty easily
 ```
 
 See `links` for more details and examples.
+
+### Homebrew
+
+The `.brew` file maintains a list of all installed homebrew formulae. To update it:
+
+```bash
+$ brew leaves > .brew
+```
