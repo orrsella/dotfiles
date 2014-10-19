@@ -42,6 +42,9 @@ do
             rm -rf $dest
         fi
 
+        # create dir
+        mkdir -p -- "$(dirname -- "$dest")"
+
         # copy file
         cp -r $src $dest
         echo "$src -> $dest"
