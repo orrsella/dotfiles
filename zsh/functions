@@ -115,3 +115,11 @@ function headers() {
 function manpdf() {
     man -t $1 | open -f -a Preview.app
 }
+
+function dockerstart() {
+    boot2docker start
+    export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+}
+
+function dockerstop() { boot2docker stop }
+function whoport() { lsof -i :$1 }
