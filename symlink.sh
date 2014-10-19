@@ -42,6 +42,9 @@ do
             rm -rf $dest
         fi
 
+        # create dir
+        mkdir -p -- "$(dirname -- "$dest")"
+
         # create link
         ln -sfF $src $dest
         echo "$src -> $dest"
