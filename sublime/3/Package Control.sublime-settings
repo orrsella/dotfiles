@@ -1,9 +1,11 @@
 {
 	"installed_packages":
 	[
+		"Jinja2",
 		"Package Control",
 		"Pretty JSON",
 		"Puppet",
+		"Sass",
 		"ScalaWorksheet",
 		"Subhub",
 		"Theme - Soda",

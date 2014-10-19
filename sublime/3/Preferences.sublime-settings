@@ -57,6 +57,7 @@
 	],
 	"scroll_past_end": true,
 	"show_full_path": false,
+	"tab_size": 2,
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
