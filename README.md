@@ -62,7 +62,7 @@ You can add a new .file (or any other config file for that matter) pretty easily
 
 See `links` for more details and examples.
 
-### Homebrew
+## Homebrew
 
 The `.brew` file maintains a list of all installed homebrew formulae. To update it:
 
