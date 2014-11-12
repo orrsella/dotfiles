@@ -11,9 +11,12 @@
     <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;*.iml;.idea;.idea_modules;.gitignore;target;project;" />
     <extensionMap>
       <mapping ext="coffee" type="JavaScript" />
-      <mapping pattern="foo" type="PLAIN_TEXT" />
+      <mapping pattern="foo2" type="PLAIN_TEXT" />
+      <mapping pattern="foo3" type="PLAIN_TEXT" />
+      <mapping pattern="foo4" type="PLAIN_TEXT" />
       <mapping pattern="last" type="PLAIN_TEXT" />
-      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping pattern="java-tips" type="PLAIN_TEXT" />
+      <mapping pattern="foo" type="PLAIN_TEXT" />
       <mapping ext="default" type="PLAIN_TEXT" />
       <mapping ext="bar" type="PLAIN_TEXT" />
     </extensionMap>

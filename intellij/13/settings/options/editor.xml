@@ -2,13 +2,13 @@
 <application>
   <component name="EditorSettings">
     <option name="LINE_SEPARATOR" />
-    <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+    <option name="USE_SOFT_WRAPS" value="" />
     <option name="USE_CUSTOM_SOFT_WRAP_INDENT" value="false" />
     <option name="CUSTOM_SOFT_WRAP_INDENT" value="0" />
     <option name="IS_VIRTUAL_SPACE" value="false" />
     <option name="IS_CARET_INSIDE_TABS" value="false" />
     <option name="STRIP_TRAILING_SPACES" value="Whole" />
-    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="false" />
+    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
     <option name="SHOW_QUICK_DOC_ON_MOUSE_OVER_ELEMENT" value="false" />
     <option name="QUICK_DOC_ON_MOUSE_OVER_DELAY_MS" value="500" />
     <option name="SHOW_INTENTION_BULB" value="true" />
@@ -32,7 +32,7 @@
     <option name="PRESELECT_RENAME" value="true" />
     <option name="REFRAIN_FROM_SCROLLING" value="false" />
     <option name="SHOW_REFORMAT_DIALOG" value="false" />
-    <option name="SHOW_OPIMIZE_IMPORTS_DIALOG" value="true" />
+    <option name="SHOW_OPIMIZE_IMPORTS_DIALOG" value="false" />
   </component>
 </application>
 

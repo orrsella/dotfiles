@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <component name="GeneralSettings">
-    <option name="browserPath" value="open" />
     <option name="lastTip" value="135" />
     <option name="showTipsOnStartup" value="false" />
     <option name="showOccupiedMemory" value="false" />
@@ -13,7 +12,7 @@
     <option name="useSafeWrite" value="true" />
     <option name="useDefaultBrowser" value="true" />
     <option name="confirmExtractFiles" value="true" />
-    <option name="searchInBackground" value="false" />
+    <option name="searchInBackground" value="true" />
     <option name="confirmExit" value="false" />
     <option name="confirmOpenNewProject2" value="-1" />
     <option name="lastProjectLocation" value="$USER_HOME$/Dev/Wix" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-  <component name="NotificationConfiguration">
+  <component name="NotificationConfiguration" showBalloons="false">
     <notification groupId="Test Runner" displayType="NONE" />
     <notification groupId="Compiler" displayType="NONE" />
     <notification groupId="Git Messages" displayType="TOOL_WINDOW" />
@@ -38,6 +38,8 @@
     <notification groupId="notification.group.id.sbt" displayType="TOOL_WINDOW" />
     <notification groupId="Spring Configuration Check" displayType="STICKY_BALLOON" />
     <notification groupId="Update Checker" displayType="STICKY_BALLOON" />
+    <notification groupId="RVM Support" />
+    <notification groupId="SbtImportMessage" displayType="STICKY_BALLOON" />
     <toolWindow group="Git Messages" />
     <toolWindow group="External Executable Critical Failures" />
     <toolWindow group="FindInPath" />
@@ -46,6 +48,11 @@
     <toolWindow group="Debugger messages" />
     <toolWindow group="JavaEE" />
     <toolWindow group="notification.group.id.sbt" />
+    <toolWindow group="Find in Path" />
+    <toolWindow group="Vcs Messages" />
+    <toolWindow group="Analyze thread dump" />
+    <toolWindow group="Grunt Console" />
+    <toolWindow group="Inspection Results" />
   </component>
 </application>
 

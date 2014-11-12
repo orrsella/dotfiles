@@ -1,5 +1,6 @@
 com.intellij
 net.nicoulaj.idea.markdown
 org.sylfra.idea.plugins.linessorter
+org.jetbrains.plugins.ruby
 org.intellij.scala
 com.intellij.scala.play2template

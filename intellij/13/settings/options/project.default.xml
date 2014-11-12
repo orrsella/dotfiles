@@ -21,14 +21,12 @@
           </profile>
         </annotationProcessing>
       </component>
-      <component name="CopyrightManager" default="">
-        <module2copyright />
-      </component>
+      <component name="CopyrightManager" default="" />
       <component name="DaemonCodeAnalyzer">
         <disable_hints />
       </component>
       <component name="DebuggerManager">
-        <breakpoint_any>
+        <breakpoint_any converted="true">
           <breakpoint>
             <option name="NOTIFY_CAUGHT" value="true" />
             <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -64,8 +62,8 @@
             <option name="LOG_MESSAGE" value="" />
           </breakpoint>
         </breakpoint_any>
-        <breakpoint_rules />
-        <ui_properties />
+        <ui_properties converted="true" />
+        <breakpoint_rules converted="true" />
       </component>
       <component name="DependencyValidationManager">
         <option name="SKIP_IMPORT_STATEMENTS" value="false" />
@@ -169,6 +167,7 @@
       <component name="SbtLocalSettings">
         <option name="modificationStamps">
           <map>
+            <entry key="$USER_HOME$/Dev/Projects/deploy-test/project" value="1389889510000" />
             <entry key="$USER_HOME$/Dev/Projects/spiderpic" value="1386787864000" />
           </map>
         </option>
