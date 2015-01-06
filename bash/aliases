@@ -1,0 +1,102 @@
+#! /bin/bash
+
+# filesystem, navigation, terminal
+alias back='cd -'                               # go back one folder
+alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
+alias ls='ls -1AGThl'                           # default format for ls
+alias ll='ls -1AGThl'                           # make l also work for ls
+alias cdd='ccd'                                 # in case you confuse ccd and cdd
+alias mkdir='mkdir -p'                          # creat dirs recursively
+alias ln='ln -v'                                # make ln verbose
+alias ..='cd ..'                                # make .. go up a folder
+alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
+alias cls='clr'                                 # clean screen
+
+# helpers (defaults)
+alias grep='grep --color=auto'                  # color grep matches
+alias count='wc -l'                             # count lines
+alias size='du -sh'                             # get folder size
+alias sizer='du -h -c'                          # get and print folder size for all folders, recursively
+alias disks='df -H -l'                          # show available disk space
+alias ip='ifconfig | grep "inet "'              # quickly print ip address
+alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
+
+# subl
+alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
+alias dotfiles='subl ~/.dotfiles'
+
+# text formatting, copy/paste
+alias copy='pbcopy'
+alias paste='pbpaste'
+alias tojson='python -mjson.tool'               # pretty print json
+alias toxml='xmllint --format -'                # pretty print xml
+alias tohtml='xmllint --html -'                 # pretty print html
+alias copyjson='paste | tojson | copy'          # prettify copied json
+alias copyxml='paste | toxml | copy'            # prettify copied xml
+alias copyhtml='paste | tohtml | copy'          # prettify copied html
+alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
+
+# mac helpers
+alias show="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'    # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias killaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"
+
+# curl
+alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"'
+alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
+alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
+alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
+#alias headers='curl -I '
+
+# httpie
+alias headers='http -p Hh '
+
+# http & web
+alias encode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias decode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias whois="whois -h whois-servers.net"
+alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# git
+alias gs='git status'
+alias ga='git add -A'
+alias gp='git push origin HEAD'
+alias gd='git difftool'
+alias gc='git commit -m'
+
+# misc
+alias googlebot='gbua'
+alias clone-template='git clone git@github.com:orrsella/scala-template.git'
+alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy; echo "-XX:MaxPermSize=512m -Xmx1g"'
+alias rand='openssl rand -hex 16'
+alias randn='openssl rand -hex '
+alias randb64='openssl rand -base64 16'
+alias randb64n='openssl rand -base64 '
+alias free='ruby $BASH_DIR/scripts/free-memory.rb'
+alias line='printf "%100s\n" | tr " " ='
+alias unique='uniq'
+alias kdiff='ksdiff'
+alias checksum='md5'
+alias cleantest='rm -rf /tmp/test-mxj'
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+alias sum="xargs | tr ' ' '+' | bc"
+
+# start processes
+alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+alias elasticstop='curl -XPOST http://localhost:9200/_shutdown'
+alias zincstart='zinc -nailed -port 3030 -start'
+
+# folders
+alias dev='cd ~/Dev'
+alias docs='cd ~/Dropbox/Documents'
+alias projects='cd ~/Dev/Projects'
+alias wix='cd ~/Dev/Wix'
+alias dl='cd ~/Downloads'
+alias dp='cd ~/Dropbox'
+alias tmp='cd ~/.tmp'
