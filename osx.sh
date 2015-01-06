@@ -588,17 +588,3 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
     killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
-
-
-
-# create subl symlink
-if [ -a /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] ;
-then
-    if [ -L /usr/local/bin/subl ] ;
-    then
-        unlink /usr/local/bin/subl
-    fi
-
-    ln -svFf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-fi

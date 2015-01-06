@@ -22,6 +22,7 @@ alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
 
 # subl
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias hosts='subl /private/etc/hosts'           # shortcut for editing hosts file
 alias dotfiles='subl ~/.dotfiles'
 
