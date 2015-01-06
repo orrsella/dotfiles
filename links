@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # list of files/folders to be symlinked
 # symlink will be created from source (in dotfiles repo) to destination (existing file to override)
 # make sure to leave an empty line at the end of the list
@@ -14,7 +16,8 @@
 ~/.bash_profile, /bash/.bash_profile
 ~/.bashrc, /bash/.bashrc
 ~/.bash/aliases, /bash/aliases
-~/.bash/functions, /bash/functions
+~/.bash/functions/general, /bash/functions/general
+~/.bash/functions/web, /bash/functions/web
 ~/.bash/prompt, /bash/prompt
 ~/.bash/variables, /bash/variables
 ~/.bash/scripts, /bash/scripts
