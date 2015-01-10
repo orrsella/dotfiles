@@ -1,4 +1,6 @@
-#! /bin/bash
+#!/bin/bash
+#
+#
 
 function servethis {
     open "http://localhost:8000";

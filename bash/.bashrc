@@ -1,4 +1,7 @@
-#! /bin/bash
+#!/bin/bash
+#
+#
+
 export BASH_DIR=~/.bash
 
 . $BASH_DIR/aliases

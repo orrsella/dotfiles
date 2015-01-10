@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
-
+#
 # By Uğur Özyılmazel, @vigobronx | @ugurozyilmazel
 # http://vigodome.com | http://ugur.ozyilmazel.com | http://github.com/vigo
 

@@ -1,15 +1,16 @@
-#! /bin/bash
+#!/bin/bash
+#
+#
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# PS1=$'\e[0;30m[%D{%Y-%m-%d %H:%M:%S}] \e[0;31m%~ $ \e[0m'
 export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
 
 
-if [ `which fortune` ]; then
-    echo ""
-    fortune
-    echo ""
+if [ $(which fortune) ]; then
+  echo ""
+  fortune
+  echo ""
 fi
