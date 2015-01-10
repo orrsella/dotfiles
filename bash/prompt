@@ -8,7 +8,6 @@ parse_git_branch() {
 
 export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
 
-
 if [ $(which fortune) ]; then
   echo ""
   fortune

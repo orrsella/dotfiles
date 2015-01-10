@@ -2,7 +2,6 @@
 #
 #
 
-
 # filesystem, navigation, terminal
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely

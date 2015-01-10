@@ -2,18 +2,18 @@
 #
 #
 
-function servethis {
-    open "http://localhost:8000";
-    python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()';
+servethis() {
+  open "http://localhost:8000";
+  python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()';
 }
 
 # determine local IP address
-function ips {
-    ifconfig | grep "inet " | awk '{ print $2 }'
+ips() {
+  ifconfig | grep "inet " | awk '{ print $2 }'
 }
 
-function whoport {
-    lsof -i :$1
+whoport() {
+  lsof -i :$1
 }
 
 CURL_FORMAT="
@@ -50,6 +50,6 @@ time_starttransfer: %{time_starttransfer}
         time_total: %{time_total}
 "
 
-function curldiag {
-    curl -v -w "$CURL_FORMAT" -o /dev/null -s $1
+curldiag() {
+  curl -v -w "$CURL_FORMAT" -o /dev/null -s $1
 }
