@@ -15,6 +15,7 @@
 # bash
 ~/.bash_profile, /bash/.bash_profile
 ~/.bashrc, /bash/.bashrc
+~/.inputrc, /bash/.inputrc
 ~/.bash/aliases, /bash/aliases
 ~/.bash/functions/general, /bash/functions/general
 ~/.bash/functions/web, /bash/functions/web
