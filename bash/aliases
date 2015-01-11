@@ -31,12 +31,6 @@ alias dotfiles='subl ~/.dotfiles'
 # text formatting, copy/paste
 alias copy='pbcopy'
 alias paste='pbpaste'
-alias tojson='python -mjson.tool'               # pretty print json
-alias toxml='xmllint --format -'                # pretty print xml
-alias tohtml='xmllint --html -'                 # pretty print html
-alias copyjson='paste | tojson | copy'          # prettify copied json
-alias copyxml='paste | toxml | copy'            # prettify copied xml
-alias copyhtml='paste | tohtml | copy'          # prettify copied html
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 
 # mac helpers
@@ -64,6 +58,7 @@ alias decode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.arg
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 alias whois="whois -h whois-servers.net"
+alias ips="ifconfig | grep 'inet ' | cut -d ' ' -f 2"
 alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # git
@@ -103,3 +98,8 @@ alias wix='cd ~/Dev/Wix'
 alias dl='cd ~/Downloads'
 alias dp='cd ~/Dropbox'
 alias tmp='cd ~/.tmp'
+
+# JavaScriptCore REPL
+jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
+[ -e "${jscbin}" ] && alias jsc="${jscbin}";
+unset jscbin;
