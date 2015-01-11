@@ -23,15 +23,6 @@
 ~/.bash/variables, /bash/variables
 ~/.bash/scripts, /bash/scripts
 
-# zsh
-~/.zshrc, /zsh/.zshrc
-~/.zsh/aliases, /zsh/aliases
-~/.zsh/functions, /zsh/functions
-~/.zsh/prompt, /zsh/prompt
-~/.zsh/variables, /zsh/variables
-~/.zsh/zsh.sublime-project, /zsh/zsh.sublime-project
-~/.zsh/scripts, /zsh/scripts
-
 # brew
 ~/.brew, /brew/.brew
 
