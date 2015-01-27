@@ -17,8 +17,7 @@
 ~/.bashrc, /bash/.bashrc
 ~/.inputrc, /bash/.inputrc
 ~/.bash/aliases, /bash/aliases
-~/.bash/functions/general, /bash/functions/general
-~/.bash/functions/web, /bash/functions/web
+~/.bash/functions, /bash/functions
 ~/.bash/prompt, /bash/prompt
 ~/.bash/variables, /bash/variables
 ~/.bash/scripts, /bash/scripts
