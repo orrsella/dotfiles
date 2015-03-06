@@ -2,13 +2,9 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
+		"Dockerfile Syntax Highlighting",
 		"Jinja2",
 		"Package Control",
 		"Pretty JSON",
