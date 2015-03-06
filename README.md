@@ -13,16 +13,12 @@ Noteworthy:
 
 #### Clone
 
-Clone to a local directory, like `~/.dotfiles`, and make sure scripts are executable:
+Clone to a local directory, like `~/.dotfiles`:
 
 ```bash
 $ cd ~
-$ git clone https://github.com/orrsella/dotfiles.git
-$ mv dotfiles .dotfiles
+$ git clone https://github.com/orrsella/dotfiles.git .dotfiles
 $ cd .dotfiles/
-$ chmod +x install
-$ chmod +x remove
-$ chmod +x osx
 ```
 
 #### Setup symlinks
