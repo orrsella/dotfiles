@@ -68,6 +68,15 @@ alias gp='git push origin HEAD'
 alias gd='git difftool'
 alias gc='git commit -m'
 
+# vagrant
+alias vi='vagrant init ubuntu/trusty64'
+alias vu='vagrant up'
+alias vs='vagrant status'
+alias vd='vagrant destroy -f'
+alias vsus='vagrant suspend'
+alias vssh='vagrant ssh'
+alias vgs='vagrant global-status'
+
 # misc
 alias googlebot='gbua'
 alias clone-template='git clone git@github.com:orrsella/scala-template.git'
@@ -103,3 +112,6 @@ alias tmp='cd ~/.tmp'
 jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
 [ -e "${jscbin}" ] && alias jsc="${jscbin}";
 unset jscbin;
+
+# JVM/sbt/maven
+alias cleantarget="find . -type d -name target -ls -exec rm -r {} +"
