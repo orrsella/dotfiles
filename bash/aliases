@@ -71,6 +71,8 @@ alias gc='git commit -m'
 # vagrant
 alias vi='vagrant init ubuntu/trusty64'
 alias vu='vagrant up'
+alias vp='vagrant provision'
+alias vr='vagrant reload'
 alias vs='vagrant status'
 alias vd='vagrant destroy -f'
 alias vsus='vagrant suspend'
