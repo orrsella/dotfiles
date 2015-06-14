@@ -67,6 +67,7 @@ alias ga='git add -A'
 alias gp='git push origin HEAD'
 alias gd='git difftool'
 alias gc='git commit -m'
+alias gl='git log -n 20 --format="%ai  %Cgreen[%h]%Creset  [%<(12,trunc)%aN]  %s"'
 
 # vagrant
 alias vi='vagrant init ubuntu/trusty64'
