@@ -9,5 +9,4 @@ export GOPATH=$HOME/Dev/go
 export PATH=$PATH:$GOPATH/bin
 
 # jvm
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
