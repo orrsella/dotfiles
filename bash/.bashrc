@@ -6,10 +6,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export BASH_DIR=~/.bash
 
-. $BASH_DIR/aliases
-. $BASH_DIR/functions
-. $BASH_DIR/prompt
-. $BASH_DIR/variables
+source $BASH_DIR/aliases
+source $BASH_DIR/functions
+source $BASH_DIR/prompt
+source $BASH_DIR/variables
 
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
