@@ -8,7 +8,6 @@ export BASH_DIR=~/.bash
 
 source $BASH_DIR/aliases
 source $BASH_DIR/functions
-source $BASH_DIR/prompt
 source $BASH_DIR/variables
 
 # Add tab completion for many Bash commands
