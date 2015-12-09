@@ -1,13 +1,12 @@
 # dotfiles
 
 A collection of miscellaneous .files ("dot" files) and some regular files. Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
+A collection of miscellaneous .files ("dot" files) and some regular files for Linux (see [dotosx](https://github.com/orrsella/dotfiles) for OS X). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 
 Noteworthy:
 
 * `links` – The list of files to manage
 * `install` – Setup symlinks based on `links`
-* `remove` – Destroy symlinks by copying .files over them
-* `osx` – Some OS X configuration ([based on .osx](https://github.com/mathiasbynens/dotfiles/blob/master/.osx))
 
 ## Setup
 
@@ -29,20 +28,6 @@ $ cd .dotfiles/
 $ ./install
 ```
 
-#### OS X
-
-Run `./osx` for some sane OS X config settings.
-
-## Remove
-
-If you decide you don't want the symlinks anymore, and want the full files in the right locations, run:
-
-```bash
-$ ./remove
-```
-
-This will copy every file from `~/.dotfiles` to its respective place, overriding the symlinks.
-
 ## Add New File
 
 To add a new .file (or any other config file for that matter):
@@ -57,11 +42,3 @@ To add a new .file (or any other config file for that matter):
 ```
 
 See `links` for more details and examples.
-
-## Homebrew
-
-The `.brew` file maintains a list of all installed homebrew formulae. To update it:
-
-```bash
-$ brew leaves > .brew
-```

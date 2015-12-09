@@ -12,9 +12,7 @@ source $BASH_DIR/prompt
 source $BASH_DIR/variables
 
 # Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-  . "$(brew --prefix)/etc/bash_completion";
-elif [ -f /etc/bash_completion ]; then
+if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion;
 fi;
 

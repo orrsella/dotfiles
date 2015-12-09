@@ -20,29 +20,16 @@
 ~/.bash/functions, /bash/functions
 ~/.bash/prompt, /bash/prompt
 ~/.bash/variables, /bash/variables
-~/.bash/scripts, /bash/scripts
-
-# brew
-~/.brew, /brew/.brew
 
 # git
 ~/.gitconfig, /git/.gitconfig
 ~/.git/.gitignore, /git/.gitignore
 ~/.git/templates, /git/templates
 
-# maven
-~/.mavenrc, /maven/.mavenrc
-
 # sbt
 ~/.sbt/build.sbt, /sbt/0.12/build.sbt
 ~/.sbt/plugins/plugins.sbt, /sbt/0.12/plugins.sbt
 ~/.sbt/0.13/build.sbt, /sbt/0.13/build.sbt
 ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
-
-# ssh
-
-# sublime
-~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User, /sublime/2
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime/3
 
 # make sure to keep an empty line at the end:

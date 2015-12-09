@@ -1,4 +1,0 @@
-/**
- * @author ${USER}
- * @since ${DATE}
- */

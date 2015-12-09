@@ -1,6 +1,0 @@
-com.intellij
-org.sylfra.idea.plugins.linessorter
-SBT
-org.intellij.scala
-com.intellij.scala.play2template
-Jetbrains TeamCity Plugin

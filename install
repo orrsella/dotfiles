@@ -36,10 +36,10 @@ while read line; do
     fi
 
     # create dir
-    mkdir -p -- "$(dirname -- "$dest")"
+    sudo mkdir -p -- "$(dirname -- "$dest")"
 
     # create link
-    ln -sfF $src $dest
+    sudo ln -sfF $src $dest
     echo "$src -> $dest"
   fi
 done < $LINKS
