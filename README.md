@@ -1,6 +1,5 @@
 # dotfiles
 
-A collection of miscellaneous .files ("dot" files) and some regular files. Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 A collection of miscellaneous .files ("dot" files) and some regular files for Linux (see [dotosx](https://github.com/orrsella/dotfiles) for OS X). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 
 Noteworthy:
