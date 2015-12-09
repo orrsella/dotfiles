@@ -18,7 +18,6 @@
 ~/.inputrc, /bash/.inputrc
 ~/.bash/aliases, /bash/aliases
 ~/.bash/functions, /bash/functions
-~/.bash/prompt, /bash/prompt
 ~/.bash/variables, /bash/variables
 
 # git

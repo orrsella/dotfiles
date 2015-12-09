@@ -5,8 +5,7 @@
 # filesystem, navigation, terminal
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
-alias ls='ls -1AGThl'                           # default format for ls
-alias ll='ls -1AGThl'                           # make l also work for ls
+alias ll='ls -l --time-style=+"%Y-%m-%d %H:%M:%S" --color -h -a'
 alias cdd='ccd'                                 # in case you confuse ccd and cdd
 alias mkdir='mkdir -p'                          # creat dirs recursively
 alias ln='ln -v'                                # make ln verbose

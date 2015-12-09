@@ -27,12 +27,12 @@ while read line; do
 
     # unlink
     if [ -L $dest ]; then
-      unlink $dest
+      sudo unlink $dest
     fi
 
     # delete file
     if [ -a $dest ]; then
-      rm -rf $dest
+      sudo rm -rf $dest
     fi
 
     # create dir
