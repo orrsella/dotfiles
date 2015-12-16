@@ -28,3 +28,5 @@
 	smudge = git-media-smudge %f
 [push]
 	default = simple
+[pull]
+	rebase = true
