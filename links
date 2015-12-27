@@ -34,5 +34,8 @@
 # vim
 ~/.vimrc, /vim/.vimrc
 ~/.vim/colors, /vim/colors
+~/.vim/backups, /vim/backups
+~/.vim/swaps, /vim/swaps
+~/.vim/undo, /vim/undo
 
 # make sure to keep an empty line at the end:
