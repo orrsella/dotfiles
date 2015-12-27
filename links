@@ -31,4 +31,8 @@
 ~/.sbt/0.13/build.sbt, /sbt/0.13/build.sbt
 ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
 
+# vim
+~/.vimrc, /vim/.vimrc
+~/.vim/colors, /vim/colors
+
 # make sure to keep an empty line at the end:
