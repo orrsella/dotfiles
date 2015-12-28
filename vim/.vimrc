@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Start Vundle plugins
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 " End Vundle plugins
 
 call vundle#end()
@@ -52,5 +53,7 @@ if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
 
+" Airline
 let &t_Co=256
 set laststatus=2
+"let g:airline_powerline_fonts = 1
