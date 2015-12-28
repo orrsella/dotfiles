@@ -32,10 +32,7 @@
 ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
 
 # vim
+~/.vim, /vim/vim
 ~/.vimrc, /vim/.vimrc
-~/.vim/colors, /vim/colors
-~/.vim/backups, /vim/backups
-~/.vim/swaps, /vim/swaps
-~/.vim/undo, /vim/undo
 
 # make sure to keep an empty line at the end:

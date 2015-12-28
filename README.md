@@ -27,6 +27,10 @@ $ cd .dotfiles/
 $ ./install
 ```
 
+#### Vim
+
+Install [Vundle](https://github.com/VundleVim/Vundle.vim) and then run `:PluginInstall` in vim.
+
 ## Add New File
 
 To add a new .file (or any other config file for that matter):

@@ -1,3 +1,18 @@
+" Vundle configuration
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+" Start Vundle plugins
+Plugin 'bling/vim-airline'
+" End Vundle plugins
+
+call vundle#end()
+filetype plugin indent on
+" End Vundle configuration
+
 " Use Solarized Dark theme
 syntax enable
 set background=dark
@@ -36,3 +51,6 @@ set directory=~/.vim/swaps
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
+
+let &t_Co=256
+set laststatus=2
