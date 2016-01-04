@@ -29,7 +29,8 @@ $ ./install
 
 #### Vim
 
-Install [Vundle](https://github.com/VundleVim/Vundle.vim) and then run `:PluginInstall` in vim.
+- Install [Vundle](https://github.com/VundleVim/Vundle.vim) and then run `:PluginInstall` in vim.
+- Download a Powerline-patched font (e.g.: [Menlo for Powerline](https://github.com/abertsch/Menlo-for-Powerline)), add to fonts, and set as terminal font.
 
 ## Add New File
 
