@@ -2,6 +2,7 @@
 	quotepath = false
 	excludesfile = ~/.git/.gitignore
 	autocrlf = input
+	editor = vim
 [user]
 	name = Orr Sella
 	email = (none)

@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
@@ -22,8 +23,6 @@ filetype plugin indent on
 " Use Solarized Dark theme
 syntax enable
 set background=dark
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
 colorscheme solarized
 
 set number                     " Enable line numbers
