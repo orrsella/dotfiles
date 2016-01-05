@@ -20,6 +20,11 @@
 ~/.bash/functions, /bash/functions
 ~/.bash/variables, /bash/variables
 
+# sshrc
+~/.sshrc, /bash/.sshrc
+~/.sshrc.d/aliases, /bash/aliases
+~/.sshrc.d/functions, /bash/functions
+
 # git
 ~/.gitconfig, /git/.gitconfig
 ~/.git/.gitignore, /git/.gitignore
