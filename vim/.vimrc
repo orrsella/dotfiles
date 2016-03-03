@@ -3,6 +3,7 @@
 """"""""""""""""""""""""
 
 set nocompatible
+filetype on
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -13,6 +14,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'wincent/Command-T'
 
 call vundle#end()
 filetype plugin indent on
@@ -34,6 +37,8 @@ set showmode                   " Show the current mode
 set title                      " Show the filename in the window titlebar
 set noerrorbells               " Disable error bells
 set mouse=a                    " Enable mouse in all modes
+set nowrap                     " Don't wrap lines
+set clipboard=unnamed          " Make clipboard work with OS clipboard
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
@@ -44,3 +49,7 @@ set undodir=~/.vim/undo
 let &t_Co=256
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+" NERDTree
+" autocmd vimenter * NERDTree    " Start NERDTree when vim starts
+let g:NERDTreeWinSize = 40     " Set default width
