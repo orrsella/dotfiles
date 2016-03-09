@@ -6,7 +6,7 @@ LINKS="links"
 DOTFILES=${PWD}
 
 # validate script working directory is DOTFILES dir
-if [ ! -f $DOTFILES/install ]; then
+if [ ! -f $DOTFILES/install.sh ]; then
   echo "*** ERROR: Make sure to run script in dotfiles dir! ***"
   exit
 fi
