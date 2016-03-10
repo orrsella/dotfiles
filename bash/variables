@@ -2,11 +2,11 @@
 #
 #
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.0.0-p195/bin:$PATH"
+# export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # go
-export GOPATH=$HOME/Dev/go
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$HOME/Dev/go
+# export PATH=$PATH:$GOPATH/bin
 
 # jvm
-export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
+# export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"

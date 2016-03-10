@@ -85,7 +85,7 @@ alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/c
 alias elasticstop='curl -XPOST http://localhost:9200/_shutdown'
 alias zincstart='zinc -nailed -port 3030 -start'
 
-# JVM/sbt/maven
+# maven
 alias cleantarget="find . -type d -name target -ls -exec rm -r {} +"
 
 # quick access helpers

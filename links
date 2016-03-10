@@ -17,7 +17,9 @@
 ~/.bashrc, /bash/.bashrc
 ~/.inputrc, /bash/.inputrc
 ~/.bash/aliases, /bash/aliases
+~/.bash/aliases-osx, /bash/aliases-osx
 ~/.bash/functions, /bash/functions
+~/.bash/prompt, /bash/prompt
 ~/.bash/variables, /bash/variables
 
 # sshrc
@@ -28,7 +30,6 @@
 # git
 ~/.gitconfig, /git/.gitconfig
 ~/.git/.gitignore, /git/.gitignore
-~/.git/templates, /git/templates
 
 # sbt
 # ~/.sbt/build.sbt, /sbt/0.12/build.sbt

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>1B9FC753-D926-4170-8081-F7BB08614B08</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bun</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Bunnylol</string>
+			<key>url</key>
+			<string>https://our.intern.facebook.com/intern/bunny/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

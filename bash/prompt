@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#
+
+if [ $(which fortune) ]; then
+  echo ""
+  fortune
+  echo ""
+fi

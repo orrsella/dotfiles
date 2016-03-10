@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# script will create symlinks for all files in LINKS
+# This script will create symlinks for all files in LINKS
 
 LINKS="links"
 DOTFILES=${PWD}
 
 # validate script working directory is DOTFILES dir
-if [ ! -f $DOTFILES/install.sh ]; then
+if [ ! -f $DOTFILES/setup-symlinks.sh ]; then
   echo "*** ERROR: Make sure to run script in dotfiles dir! ***"
   exit
 fi
