@@ -42,6 +42,7 @@
 ~/.vimrc, /vim/.vimrc
 
 # sublime
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
+# ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime
 
 # make sure to keep an empty line at the end:

@@ -3,3 +3,8 @@ vim/vim/swaps/*
 alfred/Alfred.alfredpreferences/clipboard/snippets.alfdb
 alfred/Alfred.alfredpreferences/preferences/local/f633d0ffff25063ad632e36b6f33f79b0b9f29b4
 alfred/Alfred.alfredpreferences/remote/
+sublime/Package Control.cache
+sublime/Package Control.last-run
+sublime/Package Control.merged-ca-bundle
+sublime/Package Control.system-ca-bundle
+sublime/Package Control.user-ca-bundle
