@@ -85,6 +85,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
     - Sizeup
     - Cinch
     - Sublime Text
+        - Install Package Control
     - Chrome
     	- Sign into Gmail account
     	- Load extension settings from Dropbox
@@ -125,4 +126,4 @@ $ cd ~/.dotfiles/ && ./setup.sh
 
 
 
-- 
+-

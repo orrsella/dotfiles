@@ -1,19 +1,23 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
 {
+	"bold_folder_labels": false,
+	"color_scheme": "Packages/User/Solarized (dark).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Menlo",
 	"font_size": 11.0,
 	"highlight_line": true,
-	"bold_folder_labels": true,
-	"ensure_newline_at_eof_on_save": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"rulers":
 	[
 		100
 	],
 	"show_full_path": true,
+	"soda_folder_icons": false,
 	"tab_size": 2,
+	"theme": "Sodarized Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
-  "word_wrap": "auto"
-  // "theme": "Soda Light.sublime-theme"
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "auto"
 }
