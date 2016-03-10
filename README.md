@@ -46,3 +46,83 @@ To add a new .file (or any other config file for that matter):
 ```
 
 See `links` for more details and examples.
+
+
+
+
+
+## New Machine Setup
+
+- Install 1Password
+- [Generate new private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+- Associate new key with GitHub
+- Clone and setup [dotfiles](https://github.com/orrsella/dotfiles):
+
+```bash
+$ git clone https://github.com/orrsella/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles/ && ./setup.sh
+```
+
+- Set display resolution to Scaled (on rMBP screen)
+- Remove "Applications" folder from bottom-right of Dock
+- Reorder Finder sidebar favorites alphabetically
+- Shortcuts
+    - Set "Select the previous input source" to `cmd+space`
+    - Set "Show Spotlight search" to `option+cmd+space`
+    - Disable "Show Finder search window"
+- Sign into iCloud, iTunes, Photos.app
+- Configure Internet Accounts
+- Apps
+    - Dropbox
+    - Fantastical (App Store)
+    	- Configure accounts (Internet Accounts isn't enough)
+    	- List shows: Selected Day Only
+    	- Add 1- min. message alertrs to timed events
+    - Reeder (App Store)
+    - Bartender
+    - Alfred
+    	- Attach sync settings to settings in `~/.dotfiles/alfred`
+    - Sizeup
+    - Cinch
+    - Sublime Text
+    - Chrome
+    	- Sign into Gmail account
+    	- Load extension settings from Dropbox
+    - iTerm
+    	- Set settings to `~/.dotfiles/iterm`
+	- Mail.app
+		- Set font to Helvetica 13
+		- Composing: uncheck "Mark addresses not ending with..."
+	- Mail Satellite
+	- Omni Focus
+		- Prefs -> Layout -> Custom Columns (Note, Flag)
+	- Pixelmator (App Store)
+	- Soulver
+	- Atom
+- Optional Apps
+    - Backblaze
+    - Disk Map
+    - Hues
+    - IntelliJ
+    - Marked
+    - Office
+    - Rested
+    - Skype
+    - Tower
+    - Transmit
+    - Tweetbot
+    - VLC Player
+	- Chalres
+	- Kaleidoscope
+	- Oyster
+	- VirtualBox
+	- Whireshark
+	- Calca
+
+
+
+
+
+
+
+- 

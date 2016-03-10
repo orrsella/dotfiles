@@ -4,8 +4,6 @@
 
 alias ls='gls'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-
-# copy/paste
 alias copy='pbcopy'
 alias paste='pbpaste'
 
@@ -22,10 +20,7 @@ alias pdfmerge="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
 
-
 # folders
-# alias dev='cd ~/Dev'
-# alias docs='cd ~/Dropbox/Documents'
-# alias projects='cd ~/Dev/Projects'
+alias dev='cd ~/Dev'
 alias dl='cd ~/Downloads'
-alias dp='cd ~/Dropbox (Personal)'
+alias dp='cd ~/Dropbox\ \(Personal\)'
