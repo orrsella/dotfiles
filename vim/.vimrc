@@ -11,11 +11,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'wincent/Command-T'
+" Plugin 'derekwyatt/vim-scala'
+" Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'wincent/Command-T'
 
 call vundle#end()
 filetype plugin indent on
@@ -25,8 +25,9 @@ filetype plugin indent on
 """"""""""""""""""""""
 
 " Use Solarized Dark theme
-syntax enable
+syntax on
 set background=dark
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 set number                     " Enable line numbers
