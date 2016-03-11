@@ -1,36 +1,6 @@
 # dotfiles
 
-A collection of miscellaneous .files ("dot" files) and some regular files for Linux (see [dotosx](https://github.com/orrsella/dotfiles) for OS X). Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
-
-Noteworthy:
-
-* `links` – The list of files to manage
-* `install` – Setup symlinks based on `links`
-
-## Setup
-
-#### Clone
-
-Clone to a local directory, like `~/.dotfiles`:
-
-```bash
-$ cd ~
-$ git clone https://github.com/orrsella/dotfiles.git .dotfiles
-$ cd .dotfiles/
-```
-
-#### Setup symlinks
-
-**IMPORTANT:** This will *override* all existing files with a symlink to the new repository, losing anything you have in current files. If you have any important configuration in current .files, make sure to *first* save it to the cloned repo, and only then run the script:
-
-```bash
-$ ./install
-```
-
-#### Vim
-
-- Install [Vundle](https://github.com/VundleVim/Vundle.vim) and then run `:PluginInstall` in vim.
-- Download a Powerline-patched font (e.g.: [Menlo for Powerline](https://github.com/abertsch/Menlo-for-Powerline)), add to fonts, and set as terminal font.
+A collection of miscellaneous .files ("dot" files) and some regular files. Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 
 ## Add New File
 
@@ -47,11 +17,7 @@ To add a new .file (or any other config file for that matter):
 
 See `links` for more details and examples.
 
-
-
-
-
-## New Machine Setup
+## Setup
 
 - Install 1Password
 - [Generate new private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
@@ -63,6 +29,7 @@ $ git clone https://github.com/orrsella/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles/ && ./setup.sh
 ```
 
+- Install Vim plugins: `:PluginInstall`
 - Set display resolution to Scaled (on rMBP screen)
 - Remove "Applications" folder from bottom-right of Dock
 - Reorder Finder sidebar favorites alphabetically
