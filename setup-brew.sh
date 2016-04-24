@@ -7,7 +7,8 @@ fi;
 
 brew update
 
-for app in "bash" \
+for app in "ansible" \
+	   "bash" \
            "bash-completion" \
            "coreutils" \
            "fortune" \
