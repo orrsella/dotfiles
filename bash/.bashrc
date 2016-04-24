@@ -19,3 +19,5 @@ fi
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+. /Users/orr/fblite-env/env_vars.sh
