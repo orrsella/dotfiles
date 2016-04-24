@@ -67,6 +67,8 @@ $ cd ~/.dotfiles/ && ./setup.sh
 	- Pixelmator (App Store)
 	- Soulver
 	- Atom
+    - iWork
+    - Office
 - Optional Apps
     - Backblaze
     - Disk Map
