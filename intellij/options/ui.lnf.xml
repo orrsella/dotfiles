@@ -1,0 +1,8 @@
+<application>
+  <component name="UISettings">
+    <option name="OVERRIDE_CONSOLE_CYCLE_BUFFER_SIZE" value="true" />
+    <option name="CONSOLE_CYCLE_BUFFER_SIZE_KB" value="2048" />
+    <option name="HIDE_TOOL_STRIPES" value="false" />
+    <option name="SHOW_MAIN_TOOLBAR" value="true" />
+  </component>
+</application>

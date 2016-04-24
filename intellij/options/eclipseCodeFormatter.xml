@@ -1,0 +1,18 @@
+<application>
+  <component name="EclipseCodeFormatterSettings">
+    <option name="settingsList">
+      <list>
+        <Settings>
+          <option name="defaultSettings" value="true" />
+          <option name="formatter" value="ECLIPSE" />
+          <option name="id" value="1461510457016" />
+          <option name="importOrderConfigFilePath" value="$USER_HOME$/fblite-env/fbsource/fbandroid/apps/fblite/devEnv/eclipse/fblite-eclipse-formatter-rules.xml" />
+          <option name="name" value="default" />
+          <option name="pathToConfigFileJava" value="$USER_HOME$/fblite-env/fbsource/fbandroid/apps/fblite/devEnv/eclipse/fblite-eclipse-formatter-rules.xml" />
+          <option name="selectedJavaProfile" value="facebook-lite" />
+          <option name="useOldEclipseJavaFormatter" value="true" />
+        </Settings>
+      </list>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,4 @@
+EclipseCodeFormatter
+com.facebook.tools.ideawatcher
+PythonCore
+org.intellij.scala
