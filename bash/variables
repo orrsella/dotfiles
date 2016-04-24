@@ -2,7 +2,9 @@
 #
 #
 
-# export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:~/buck/bin:$PATH"
+export EDITOR=vim
+export VISUAL=vim
 
 # go
 # export GOPATH=$HOME/Dev/go
@@ -10,3 +12,4 @@
 
 # jvm
 # export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
+export M2_HOME="/usr/local/Cellar/maven/3.3.9"

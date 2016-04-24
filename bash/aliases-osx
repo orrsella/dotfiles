@@ -24,3 +24,7 @@ alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias dev='cd ~/Dev'
 alias dl='cd ~/Downloads'
 alias dp='cd ~/Dropbox\ \(Personal\)'
+
+# quick access helpers
+alias hosts='subl /private/etc/hosts'
+alias dotfiles='subl ~/.dotfiles'
