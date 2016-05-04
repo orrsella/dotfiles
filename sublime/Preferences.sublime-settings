@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": false,
-	"color_scheme": "Packages/User/Solarized (dark).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Menlo",
 	"font_size": 11.0,
@@ -13,12 +13,12 @@
 	[
 		80
 	],
+	"scroll_past_end": true,
 	"show_full_path": true,
 	"soda_folder_icons": false,
 	"tab_size": 2,
-	"theme": "Sodarized Dark 3.sublime-theme",
+	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": "auto",
-	"scroll_past_end": true
+	"word_wrap": "false"
 }
