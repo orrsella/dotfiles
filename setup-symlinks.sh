@@ -27,19 +27,20 @@ while read line; do
 
     # unlink
     if [ -L $dest ]; then
-      sudo unlink $dest
+      unlink $dest
     fi
 
     # delete file
     if [ -a $dest ]; then
-      sudo rm -rf $dest
+      rm -rf $dest
     fi
 
     # create dir
-    sudo mkdir -p -- "$(dirname -- "$dest")"
+    mkdir -p -- "$(dirname -- "$dest")"
 
     # create link
-    sudo ln -sfF $src $dest
+    ln -sfF $src $dest
+    # ln -sfF $src $dest
     echo "$src -> $dest"
   fi
 done < $LINKS
