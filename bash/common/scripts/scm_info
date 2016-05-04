@@ -85,7 +85,7 @@ _scm_info() {
         fi
       fi
     else
-      br=$(expr substr "$dirstate" 1 7)
+      br=$(echo "$dirstate" | cut -c 1-6)
     fi
     br="$br$extra"
   elif test -n "$git" ; then
