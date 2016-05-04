@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# Common
+source $SSHHOME/.sshrc.d/aliases-common
+source $SSHHOME/.sshrc.d/functions-common
+source $SSHHOME/.sshrc.d/prompt-common
+
+# SSH
+source $SSHHOME/.sshrc.d/aliases-ssh
+source $SSHHOME/.sshrc.d/functions-ssh
+source $SSHHOME/.sshrc.d/variables-ssh
+source $SSHHOME/.sshrc.d/prompt-ssh
+
+# Screen
+# if [ "$TERM" != "screen" ]; then
+#   screen -xRR
+# fi

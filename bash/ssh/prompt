@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+
+# export PS1="${BOLD}${WORKING_DIRECTORY}${RESET}${YELLOW}\$(scm_info) ${RESET}${BOLD}${PURPLE}$ ${RESET}"
+
+# source $ADMIN_SCRIPTS/scm-prompt
+# export PS1='\u@\h:\w $(_dotfiles_scm_info)\$ '
+
+
+export PS1="\
+${BOLD}\
+${RED}${USER}@${SHORT_HOSTNAME}:\
+${WHITE}${WORKING_DIRECTORY}\
+${YELLOW}\$(scm_info) \
+${PURPLE}$ ${RESET}"

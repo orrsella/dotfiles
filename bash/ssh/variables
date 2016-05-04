@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+#
+
+export PATH="$SSHHOME/.sshrc.d/scripts-common:$SSHHOME/.sshrc.d/scripts-ssh:$PATH"

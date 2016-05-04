@@ -7,7 +7,7 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias copy='pbcopy'
 alias paste='pbpaste'
 
-# mac helpers
+# Mac helpers
 alias show="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
 alias hide="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
@@ -15,16 +15,48 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
 alias killaudio="sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`"
 alias pdfmerge="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py --output output.pdf "
-# alias free='ruby $BASH_DIR/scripts/free-memory.rb'
 
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
 
-# folders
+# Folders
 alias dev='cd ~/Dev'
 alias dl='cd ~/Downloads'
 alias dp='cd ~/Dropbox\ \(Personal\)'
 
-# quick access helpers
+# Quick access helpers
 alias hosts='subl /private/etc/hosts'
 alias dotfiles='subl ~/.dotfiles'
+
+# Vagrant
+alias vi='vagrant init ubuntu/trusty64'
+alias vu='vagrant up'
+alias vp='vagrant provision'
+alias vpshell='vagrant provision --provision-with shell'
+alias vr='vagrant reload'
+alias vs='vagrant status'
+alias vd='vagrant destroy -f'
+alias vsus='vagrant suspend'
+alias vssh='vagrant ssh'
+alias vgs='vagrant global-status'
+
+# Start processes
+alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+alias elasticstop='curl -XPOST http://localhost:9200/_shutdown'
+alias zincstart='zinc -nailed -port 3030 -start'
+
+# Maven
+alias cleantarget="find . -type d -name target -ls -exec rm -r {} +"
+alias cleantest='rm -rf /tmp/test-mxj'
+
+# Httpie
+alias headers='http -p Hh '
+
+# Misc
+alias clone-template='git clone git@github.com:orrsella/scala-template.git'
+alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy; echo "-XX:MaxPermSize=512m -Xmx1g"'
+
+# FB
+alias lite-ssh-bridge='ssh -D 5555 dev'
+alias lite-install='buck install -r fblite'
+alias lite-debug='buck install -r -w fblite_debug'

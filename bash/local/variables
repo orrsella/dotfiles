@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+#
+
+export PATH="/usr/local/bin:/usr/local/sbin:$BASH_DIR/scripts-common:$BASH_DIR/scripts-local:$PATH"
+export EDITOR=vim
+export VISUAL=vim
+
+# Use gnutar as tar, for sshrc warnings
+GNUBIN_DIR="/usr/local/opt/gnu-tar/libexec/gnubin"
+if [ -e "$GNUBIN_DIR/gnubin/tar" ]; then
+  export PATH="$GNUBIN_DIR:$PATH"
+fi
+
+# Go
+# export GOPATH=$HOME/Dev/go
+# export PATH=$PATH:$GOPATH/bin
+
+# JVM
+# export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
+export M2_HOME="/usr/local/Cellar/maven/3.3.9"
+
+# FB
+export PATH="~/buck/bin:$PATH"
+
+    PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"

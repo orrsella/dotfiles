@@ -1,48 +1,64 @@
 #! /bin/bash
+#
+# List of files/folders to be symlinked.
+#
+# Symlink will be created from source (in dotfiles repo) to destination
+# (existing file to override).
+# - **Make sure** to leave an empty line at the end of the list
+# - Escape white spaces with \
+# - Line format: destination, source
+#   desination - The original file on disk
+#   source -     The symlinked file in the dotfiles repo folder structure,
+#                relative to the repo's base dir
 
-# list of files/folders to be symlinked
-# symlink will be created from source (in dotfiles repo) to destination (existing file to override)
-# make sure to leave an empty line at the end of the list
-# escape white spaces with \
-# lines format: destination, source
-#   desination - the original file on disk
-#   source - the symlinked file in the dotfiles repo folder structure, relative to the repo's base dir
-
-# example:
+# Example:
 # ~/.bash_profile, /bash/.bash_profile
 # ~/.test, /dir12/.test
 
-# bash
-~/.bash_profile, /bash/.bash_profile
-~/.bashrc, /bash/.bashrc
-~/.inputrc, /bash/.inputrc
-~/.bash/aliases, /bash/aliases
-~/.bash/aliases-osx, /bash/aliases-osx
-~/.bash/functions, /bash/functions
-~/.bash/prompt, /bash/prompt
-~/.bash/variables, /bash/variables
+# Bash
+~/.bash_profile, /bash/local/.bash_profile
+~/.bashrc, /bash/local/.bashrc
+~/.inputrc, /bash/local/.inputrc
+~/.hushlogin, /bash/local/.hushlogin
+~/.bash/aliases-common, /bash/common/aliases
+~/.bash/aliases-local, /bash/local/aliases
+~/.bash/functions-common, /bash/common/functions
+~/.bash/functions-local, /bash/local/functions
+~/.bash/prompt-common, /bash/common/prompt
+~/.bash/prompt-local, /bash/local/prompt
+~/.bash/variables-local, /bash/local/variables
+~/.bash/scripts-common/curldiag, /bash/common/scripts/curldiag
+~/.bash/scripts-common/scm_info, /bash/common/scripts/scm_info
 
-# sshrc
-~/.sshrc, /bash/.sshrc
-~/.sshrc.d/aliases, /bash/aliases
-~/.sshrc.d/functions, /bash/functions
+# SSHRC
+~/.sshrc, /bash/ssh/.sshrc
+~/.sshrc.d/aliases-common, /bash/common/aliases
+~/.sshrc.d/aliases-ssh, /bash/ssh/aliases
+~/.sshrc.d/functions-common, /bash/common/functions
+~/.sshrc.d/functions-ssh, /bash/ssh/functions
+~/.sshrc.d/prompt-common, /bash/common/prompt
+~/.sshrc.d/prompt-ssh, /bash/ssh/prompt
+~/.sshrc.d/variables-ssh, /bash/ssh/variables
+~/.sshrc.d/scripts-common/curldiag, /bash/common/scripts/curldiag
+~/.sshrc.d/scripts-common/scm_info, /bash/common/scripts/scm_info
 
-# git
+# Git
 ~/.gitconfig, /git/.gitconfig
 ~/.git/.gitignore, /git/.gitignore
 
-# sbt
+# Mercurial
+~/.hgrc, /hg/.hgrc
+
+# Sbt
 # ~/.sbt/build.sbt, /sbt/0.12/build.sbt
 # ~/.sbt/plugins/plugins.sbt, /sbt/0.12/plugins.sbt
 # ~/.sbt/0.13/build.sbt, /sbt/0.13/build.sbt
 # ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
 
-# vim
+# Vim
 ~/.vim, /vim/vim
 ~/.vimrc, /vim/.vimrc
 
-# sublime
+# Sublime
 # ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime
-
-# make sure to keep an empty line at the end:

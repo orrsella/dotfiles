@@ -2,18 +2,15 @@
 #
 #
 
-# filesystem, navigation, terminal
+# Filesystem, navigation, terminal
 alias back='cd -'                               # go back one folder
 alias path='echo $PATH | tr ":" "\n" | sort'    # print $path nicely
 alias ll='ls -l --time-style=+"%Y-%m-%d %H:%M:%S" --color -h -a'
-alias cdd='ccd'                                 # in case you confuse ccd and cdd
 alias mkdir='mkdir -p'                          # creat dirs recursively
 alias ln='ln -v'                                # make ln verbose
 alias ..='cd ..'                                # make .. go up a folder
-alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
-alias cls='clr'                                 # clean screen
 
-# helpers (defaults)
+# Helpers
 alias grep='grep --color=auto'                  # color grep matches
 alias count='wc -l'                             # count lines
 alias size='du -sh'                             # get folder size
@@ -22,20 +19,10 @@ alias disks='df -H -l'                          # show available disk space
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
 
-# text formatting
+# Text formatting
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 
-# curl
-alias ie6curl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)"'
-alias ffcurl='curl -H "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)"'
-alias chcurl='curl -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36"'
-alias gbcurl='curl -H "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"'
-#alias headers='curl -I '
-
-# httpie
-alias headers='http -p Hh '
-
-# http & web
+# HTTP/web
 alias encode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 alias decode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -44,7 +31,7 @@ alias whois="whois -h whois-servers.net"
 alias ips="ifconfig | grep 'inet ' | cut -d ' ' -f 2"
 alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-# git
+# Git
 alias gs='git status'
 alias ga='git add -A'
 alias gp='git push origin HEAD'
@@ -52,22 +39,7 @@ alias gd='git difftool'
 alias gc='git commit -m'
 alias gl='git log -n 20 --format="%ai  %Cgreen[%h]%Creset  [%<(12,trunc)%aN]  %s"'
 
-# vagrant
-alias vi='vagrant init ubuntu/trusty64'
-alias vu='vagrant up'
-alias vp='vagrant provision'
-alias vpshell='vagrant provision --provision-with shell'
-alias vr='vagrant reload'
-alias vs='vagrant status'
-alias vd='vagrant destroy -f'
-alias vsus='vagrant suspend'
-alias vssh='vagrant ssh'
-alias vgs='vagrant global-status'
-
-# misc
-alias googlebot='gbua'
-alias clone-template='git clone git@github.com:orrsella/scala-template.git'
-alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy; echo "-XX:MaxPermSize=512m -Xmx1g"'
+# Misc
 alias rand='openssl rand -hex 16'
 alias randn='openssl rand -hex '
 alias randb64='openssl rand -base64 16'
@@ -76,14 +48,5 @@ alias line='printf "%100s\n" | tr " " ='
 alias unique='uniq'
 alias kdiff='ksdiff'
 alias checksum='md5'
-alias cleantest='rm -rf /tmp/test-mxj'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 alias sum="xargs | tr ' ' '+' | bc"
-
-# start processes
-alias elasticstart='elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
-alias elasticstop='curl -XPOST http://localhost:9200/_shutdown'
-alias zincstart='zinc -nailed -port 3030 -start'
-
-# maven
-alias cleantarget="find . -type d -name target -ls -exec rm -r {} +"

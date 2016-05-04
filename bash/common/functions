@@ -2,16 +2,17 @@
 #
 #
 
-# set terminal title
+# Set terminal title
 title() {
   echo -en "\033]2;$1\007";
 }
 
+# Set as executable
 chmox() {
   chmod +x $1
 }
 
-# extract any archive format
+# Extract (almost) any archive format
 extract() {
   if [ -f $1 ] ; then
     case $1 in
@@ -44,6 +45,7 @@ dfgrep() {
   grep -iR "$@" * | grep -v "Binary" | sed 's/:/ /g' | awk '{ print $1 }' | sort | uniq
 }
 
+# Process grep
 psgrep() {
   if [ ! -z $1 ] ; then
     echo "Grepping for processes matching $1..."
@@ -68,6 +70,7 @@ json() {
   fi;
 }
 
+# XML syntax highlighting
 xml() {
   if [ -t 0 ]; then # argument
     xmllint --format - <<< "$*" | pygmentize -l xml;
@@ -76,6 +79,7 @@ xml() {
   fi;
 }
 
+# HTML syntax highlighting
 html() {
   if [ -t 0 ]; then # argument
     xmllint --html - <<< "$*" | pygmentize -l html;
@@ -84,45 +88,7 @@ html() {
   fi;
 }
 
-servethis() {
-  open "http://localhost:8000";
-  python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()';
-}
-
+# Find who's using a specific port
 whoport() {
   lsof -i :$1
-}
-
-CURL_FORMAT="
-
-      content_type: %{content_type}
-filename_effective: %{filename_effective}
-    ftp_entry_path: %{ftp_entry_path}
-         http_code: %{http_code}
-      http_connect: %{http_connect}
-      num_connects: %{num_connects}
-     num_redirects: %{num_redirects}
-      redirect_url: %{redirect_url}
-     size_download: %{size_download}
-       size_header: %{size_header}
-      size_request: %{size_request}
-       size_upload: %{size_upload}
-    speed_download: %{speed_download}
-      speed_upload: %{speed_upload}
- ssl_verify_result: %{ssl_verify_result}
-     url_effective: %{url_effective}
-
-
-   time_namelookup: %{time_namelookup}
-      time_connect: %{time_connect}
-   time_appconnect: %{time_appconnect}
-  time_pretransfer: %{time_pretransfer}
-     time_redirect: %{time_redirect}
-time_starttransfer: %{time_starttransfer}
-                   -------
-        time_total: %{time_total}
-"
-
-curldiag() {
-  curl -v -w "$CURL_FORMAT" -o /dev/null -s $1
 }

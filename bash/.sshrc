@@ -1,4 +1,0 @@
-#! /bin/bash
-
-source $SSHHOME/.sshrc.d/aliases
-source $SSHHOME/.sshrc.d/functions

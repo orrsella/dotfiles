@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+
+if [ $(which fortune) ]; then
+  echo ""
+  fortune
+  echo ""
+fi
+
+export PS1="\
+${BOLD}\
+${GREEN}${USER}@${SHORT_HOSTNAME}:\
+${WHITE}${WORKING_DIRECTORY}\
+${YELLOW}\$(scm_info) \
+${PURPLE}$ ${RESET}"
