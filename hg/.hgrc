@@ -1,4 +1,3 @@
 [ui]
 username = Orr Sella <orr@fb.com>
-[extensions]
-lz4revlog = ~/Dev/fb/lz4revlog/lz4revlog.py
+
