@@ -1,4 +1,8 @@
 EclipseCodeFormatter
+YourKit Java Profiler 2016.02-b35 Integration
 com.facebook.tools.ideawatcher
+intellij.buck.plugin
+BashSupport
 PythonCore
+com.kukido.eclipser
 org.intellij.scala
