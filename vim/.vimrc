@@ -26,9 +26,11 @@ filetype plugin indent on
 
 " Use Solarized Dark theme
 syntax on
-set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized
+" set background=dark
+" let g:solarized_termtrans = 1
+" let g:solarized_termcolors=16
+" colorscheme solarized
+set t_Co=256
 
 set number                     " Enable line numbers
 set backspace=indent,eol,start " Allow backspace in insert mode
