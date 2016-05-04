@@ -88,3 +88,6 @@ $ cd ~/.dotfiles/ && ./setup.sh
 	- VirtualBox
 	- Whireshark
 	- Calca
+- Screen savers
+    - [Apple Watch](http://www.rasmusnielsen.dk/applewatch/)
+    - [Apple TV](https://github.com/JohnCoates/Aerial)
