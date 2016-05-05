@@ -25,5 +25,5 @@ fi
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
-# FB-specific
+# FB
 source /Users/orr/fblite-env/env_vars.sh

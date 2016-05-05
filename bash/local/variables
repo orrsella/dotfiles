@@ -22,5 +22,3 @@ export M2_HOME="/usr/local/Cellar/maven/3.3.9"
 
 # FB
 export PATH="~/buck/bin:$PATH"
-
-    PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
