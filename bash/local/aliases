@@ -57,6 +57,6 @@ alias clone-template='git clone git@github.com:orrsella/scala-template.git'
 alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy; echo "-XX:MaxPermSize=512m -Xmx1g"'
 
 # FB
-alias fblite-ssh-tunnel='ssh -D 5555 -N dev'
-alias fblite-install='buck install -r fblite'
+alias fblite-ssh-tunnel='ssh_tunnel dev 5555'
+alias fblite-install-client='buck install -r fblite'
 alias fblite-debug='buck install -r -w fblite_debug'

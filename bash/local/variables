@@ -7,9 +7,8 @@ export EDITOR=vim
 export VISUAL=vim
 
 # Use gnutar as tar, for sshrc warnings
-GNUBIN_DIR="/usr/local/opt/gnu-tar/libexec/gnubin"
-if [ -e "$GNUBIN_DIR/gnubin/tar" ]; then
-  export PATH="$GNUBIN_DIR:$PATH"
+if [ -e "/usr/local/opt/gnu-tar/libexec/gnubin/tar" ]; then
+  export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 fi
 
 # Go
@@ -17,8 +16,17 @@ fi
 # export PATH=$PATH:$GOPATH/bin
 
 # JVM
-# export MAVEN_OPTS="-Xmx2048M -Xss128M -XX:+CMSClassUnloadingEnabled"
-export M2_HOME="/usr/local/Cellar/maven/3.3.9"
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export MAVEN_OPTS="-Xmx4g -XX:PermSize=256m -Xss128M -XX:+CMSClassUnloadingEnabled"
+
+if [ -f $(brew --prefix)/bin/mvn ]; then
+  export M2_HOME="$(brew --prefix)/bin/mvn"
+  export M2=$M2_HOME/bin
+fi
 
 # FB
 export PATH="~/buck/bin:$PATH"
+export ANDROID_SDK=/opt/android-sdk
+export ANDROID_NDK=/opt/android-ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH"
