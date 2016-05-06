@@ -17,12 +17,14 @@ fi
 
 # JVM
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export MAVEN_OPTS="-Xmx4g -XX:PermSize=256m -Xss128M -XX:+CMSClassUnloadingEnabled"
+export MAVEN_OPTS="-Xmx4g -Xss128M"
 
-if [ -f $(brew --prefix)/bin/mvn ]; then
-  export M2_HOME="$(brew --prefix)/bin/mvn"
-  export M2=$M2_HOME/bin
-fi
+# For maven 3.3.9 don't set M2_HOME anymore:
+# http://stackoverflow.com/questions/34015529/installing-maven-3-3-9-how-to-set-m2-home-maven-home-and-bin-folder
+# if [ -f $(brew --prefix)/bin/mvn ]; then
+#   export M2_HOME="$(brew --prefix)/bin/mvn"
+#   export M2=$M2_HOME/bin
+# fi
 
 # FB
 export PATH="~/buck/bin:$PATH"
