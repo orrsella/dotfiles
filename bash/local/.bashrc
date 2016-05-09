@@ -16,10 +16,12 @@ source $BASH_DIR/aliases-local
 source $BASH_DIR/functions-local
 source $BASH_DIR/variables-local
 source $BASH_DIR/prompt-local
+source $BASH_DIR/scripts-local/hg-completion.bash
+source $BASH_DIR/scripts-local/git-completion.bash
 
 # Add tab completion for many Bash commands
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+  source $(brew --prefix)/etc/bash_completion
 fi
 
 # Autocorrect typos in path names when using `cd`

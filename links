@@ -29,6 +29,8 @@
 ~/.bash/variables-local, /bash/local/variables
 ~/.bash/scripts-common/curldiag, /bash/common/scripts/curldiag
 ~/.bash/scripts-common/scm_info, /bash/common/scripts/scm_info
+~/.bash/scripts-local/hg-completion.bash, /bash/local/scripts/hg-completion.bash
+~/.bash/scripts-local/git-completion.bash, /bash/local/scripts/git-completion.bash
 
 # SSHRC
 ~/.sshrc, /bash/ssh/.sshrc
