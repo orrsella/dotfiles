@@ -27,10 +27,8 @@
 ~/.bash/prompt-common, /bash/common/prompt
 ~/.bash/prompt-local, /bash/local/prompt
 ~/.bash/variables-local, /bash/local/variables
-~/.bash/scripts-common/curldiag, /bash/common/scripts/curldiag
-~/.bash/scripts-common/scm_info, /bash/common/scripts/scm_info
-~/.bash/scripts-local/hg-completion.bash, /bash/local/scripts/hg-completion.bash
-~/.bash/scripts-local/git-completion.bash, /bash/local/scripts/git-completion.bash
+~/.bash/scripts-common, /bash/common/scripts
+~/.bash/scripts-local, /bash/local/scripts
 
 # SSHRC
 ~/.sshrc, /bash/ssh/.sshrc
@@ -41,8 +39,8 @@
 ~/.sshrc.d/prompt-common, /bash/common/prompt
 ~/.sshrc.d/prompt-ssh, /bash/ssh/prompt
 ~/.sshrc.d/variables-ssh, /bash/ssh/variables
-~/.sshrc.d/scripts-common/curldiag, /bash/common/scripts/curldiag
-~/.sshrc.d/scripts-common/scm_info, /bash/common/scripts/scm_info
+~/.sshrc.d/scripts-common, /bash/common/scripts
+~/.sshrc.d/scripts-ssh, /bash/ssh/scripts
 
 # Git
 ~/.gitconfig, /git/.gitconfig
