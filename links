@@ -56,8 +56,8 @@
 # ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
 
 # Vim
-~/.vim, /vim/vim
-~/.vimrc, /vim/.vimrc
+~/.vim, /vim/local
+~/.vimrc, /vim/local/.vimrc
 
 # Sublime
 # ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
