@@ -12,32 +12,32 @@ Even more tools: http://techblog.netflix.com/2015/08/netflix-at-velocity-2015-li
  1) ${BOLD}uptime${RESET}              Load averages, indicate the number of tasks (processes) wanting to run (CPU and I/O).
  2) ${BOLD}dmesg | tail${RESET}        Last 10 system messages (if there are any).
  3) ${BOLD}vmstat 1${RESET}            Virtual memory stat, 1 second summaries. CPU stats are on average, across all CPUs:
-                          - r         Number of processes running on CPU and waiting for a turn (CPU only, no I/O). Value > cores = saturation
-                          - free      Free memory in kilobytes; see (7) for more info on free mem
-                          - si/so     Swap-ins and swap-outs; if these are non-zero, you're out of memory
-                          - us        User time
-                          - sy        System time (kernel), necessary for I/O processing
-                          - id        Idle
-                          - wa        Wait I/O (like idle for I/O reason), constant value points to a disk bottleneck
-                          - st        Stolen time
+                          - r          Number of processes running on CPU and waiting for a turn (CPU only, no I/O). Value > cores = saturation
+                          - free       Free memory in kilobytes; see (7) for more info on free mem
+                          - si/so      Swap-ins and swap-outs; if these are non-zero, you're out of memory
+                          - us         User time
+                          - sy         System time (kernel), necessary for I/O processing
+                          - id         Idle
+                          - wa         Wait I/O (like idle for I/O reason), constant value points to a disk bottleneck
+                          - st         Stolen time
  4) ${BOLD}mpstat -P ALL 1${RESET}     CPU time breakdowns per CPU, allows to check for an imbalance (a single hot CPU can be evidence of a single-threaded application).
  5) ${BOLD}pidstat 1${RESET}           Per-process summary, useful for watching patterns over time. CPU column is the total across all CPUs (cores).
  6) ${BOLD}iostat -xz 1${RESET}        Workload and performance of block devices:
-                          - r/s       Reads per second
-                          - w/s       Writes per second
-                          - rkB/s     Read Kbytes per second
-                          - wkB/s     Write Kbytes per second
-                          - await     The average time for the I/O in milliseconds (time the application suffers, as it includes both time queued and time being serviced)
-                          - avgqu-sz  The average number of requests issued to the device; values greater than 1 can be evidence of saturation
-                          - %util     Device utilization during internal (1 second in this case)
+                          - r/s        Reads per second
+                          - w/s        Writes per second
+                          - rkB/s      Read Kbytes per second
+                          - wkB/s      Write Kbytes per second
+                          - await      The average time for the I/O in milliseconds (time the application suffers, as it includes both time queued and time being serviced)
+                          - avgqu-sz   The average number of requests issued to the device; values greater than 1 can be evidence of saturation
+                          - %util      Device utilization during internal (1 second in this case)
  7) ${BOLD}free -m${RESET}             Memory stats in Mbytes. Cached memory can be reclaimed quickly if apps need it, so it should be considered free (-/+ buffers/cache line). Also buffers and cached shouldn't be near-zero in size.
  8) ${BOLD}sar -n DEV 1${RESET}        Network interface throughput:
-                          - rxkB/s    Received Kbytes per second (x8 for Kbits)
-                          - txkB/s    Transmitted Kbytes per second (x8 for Kbits)
-                          - %ifutil   Device utilization (max of both directions for full duplex)
+                          - rxkB/s     Received Kbytes per second (x8 for Kbits)
+                          - txkB/s     Transmitted Kbytes per second (x8 for Kbits)
+                          - %ifutil    Device utilization (max of both directions for full duplex)
  9) ${BOLD}sar -n TCP,ETCP 1${RESET}   Summarized view of some key TCP metrics:
-                          - active/s  Number of locally-initiated TCP connections per second
-                          - passive/s Number of remotely-initiated TCP connections per second
-                          - retrans/s Number of TCP retransmits per second (sign of a network or server issue)
+                          - active/s   Number of locally-initiated TCP connections per second
+                          - passive/s  Number of remotely-initiated TCP connections per second
+                          - retrans/s  Number of TCP retransmits per second (sign of a network or server issue)
 10) ${BOLD}top/htop${RESET}            Non-rolling system overview (which makes it hard to see patterns over time). Pro-tip: Ctrl-S to pause, Ctrl-Q to continue."
 }
