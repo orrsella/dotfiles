@@ -25,6 +25,7 @@ for app in "ansible" \
            "ssh-copy-id" \
            "sshrc" \
            "tcpflow" \
+           "tree" \
            "vim" \
            "wget"; do
 
