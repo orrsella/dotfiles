@@ -26,6 +26,7 @@
 ~/.bash/functions-local, /bash/local/functions
 ~/.bash/prompt-common, /bash/common/prompt
 ~/.bash/prompt-local, /bash/local/prompt
+~/.bash/variables-common, /bash/common/variables
 ~/.bash/variables-local, /bash/local/variables
 ~/.bash/scripts-common, /bash/common/scripts
 ~/.bash/scripts-local, /bash/local/scripts
@@ -38,6 +39,7 @@
 ~/.sshrc.d/functions-ssh, /bash/ssh/functions
 ~/.sshrc.d/prompt-common, /bash/common/prompt
 ~/.sshrc.d/prompt-ssh, /bash/ssh/prompt
+~/.sshrc.d/variables-common, /bash/common/variables
 ~/.sshrc.d/variables-ssh, /bash/ssh/variables
 ~/.sshrc.d/scripts-common, /bash/common/scripts
 ~/.sshrc.d/scripts-ssh, /bash/ssh/scripts

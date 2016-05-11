@@ -3,14 +3,15 @@
 export SSHRCD="$SSHHOME/.sshrc.d"
 
 # Common
+source $SSHRCD/variables-common
 source $SSHRCD/aliases-common
 source $SSHRCD/functions-common
 source $SSHRCD/prompt-common
 
 # SSH
+source $SSHRCD/variables-ssh
 source $SSHRCD/aliases-ssh
 source $SSHRCD/functions-ssh
-source $SSHRCD/variables-ssh
 source $SSHRCD/prompt-ssh
 
 # Screen

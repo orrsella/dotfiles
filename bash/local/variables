@@ -3,17 +3,11 @@
 #
 
 export PATH="/usr/local/bin:/usr/local/sbin:$BASH_DIR/scripts-common:$BASH_DIR/scripts-local:$PATH"
-export EDITOR=vim
-export VISUAL=vim
 
 # Use gnutar as tar, for sshrc warnings
 if [ -e "/usr/local/opt/gnu-tar/libexec/gnubin/tar" ]; then
   export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 fi
-
-# Go
-# export GOPATH=$HOME/Dev/go
-# export PATH=$PATH:$GOPATH/bin
 
 # JVM
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)

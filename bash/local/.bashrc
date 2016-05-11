@@ -7,14 +7,15 @@ export LANG=en_US.UTF-8
 export BASH_DIR=~/.bash
 
 # Common
+source $BASH_DIR/variables-common
 source $BASH_DIR/aliases-common
 source $BASH_DIR/functions-common
 source $BASH_DIR/prompt-common
 
 # Local
+source $BASH_DIR/variables-local
 source $BASH_DIR/aliases-local
 source $BASH_DIR/functions-local
-source $BASH_DIR/variables-local
 source $BASH_DIR/prompt-local
 source $BASH_DIR/scripts-local/hg-completion.bash
 source $BASH_DIR/scripts-local/git-completion.bash
