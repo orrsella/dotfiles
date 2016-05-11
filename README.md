@@ -25,7 +25,7 @@ See `links` for more details and examples.
 - Clone and setup [dotfiles](https://github.com/orrsella/dotfiles):
 
 ```bash
-$ git clone https://github.com/orrsella/dotfiles.git ~/.dotfiles
+$ git clone git@github.com:orrsella/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles/ && ./setup.sh
 ```
 
