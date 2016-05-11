@@ -58,5 +58,6 @@ alias xmx='echo "-XX:MaxPermSize=512m -Xmx1g"| pbcopy; echo "-XX:MaxPermSize=512
 
 # FB
 alias fblite-ssh-tunnel='ssh_tunnel dev 5555'
-alias fblite-install-client='buck install -r fblite'
-alias fblite-debug='buck install -r -w fblite_debug'
+alias fblite-install-client='buck install --run fblite'
+alias fblite-debug-client='buck install --run --wait-for-debugger fblite_debug'
+alias android-device-monitor='monitor&'
