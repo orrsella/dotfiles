@@ -69,6 +69,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
 	- Atom
     - iWork
     - Office
+    - WhatsApp
 - Optional Apps
     - Backblaze
     - Disk Map

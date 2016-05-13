@@ -1,6 +1,6 @@
-""""""""""""""""""""""""
-" Vundle configuration "
-""""""""""""""""""""""""
+""""""""""""""""
+" Begin Vundle "
+""""""""""""""""
 
 set nocompatible
 filetype on
@@ -20,11 +20,11 @@ Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
-""""""""""""""""""""""
-" End Vundle plugins "
-""""""""""""""""""""""
+""""""""""""""
+" End Vundle "
+""""""""""""""
 
-" Use Solarized Dark theme
+" Solarized Dark theme
 syntax on
 " set background=dark
 " let g:solarized_termtrans = 1
@@ -43,16 +43,11 @@ set mouse=a                    " Enable mouse in all modes
 set nowrap                     " Don't wrap lines
 set clipboard=unnamed          " Make clipboard work with OS clipboard
 
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-set undodir=~/.vim/undo
-
-" Airline
+" Airline Plugin
 let &t_Co=256
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-" NERDTree
+" NERDTree Plugin
 " autocmd vimenter * NERDTree    " Start NERDTree when vim starts
-let g:NERDTreeWinSize = 40     " Set default width
+" let g:NERDTreeWinSize = 40     " Set default width
