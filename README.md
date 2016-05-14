@@ -17,11 +17,11 @@ To add a new .file (or any other config file for that matter):
 
 See `links` for more details and examples.
 
-## Setup
+## New Machine Setup
 
 - Install 1Password
 - [Generate new private key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-- Associate new key with GitHub
+- Associate new key [with GitHub](https://github.com/settings/keys)
 - Clone and setup [dotfiles](https://github.com/orrsella/dotfiles):
 
 ```bash
@@ -32,7 +32,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
 - Install Vim plugins: `:PluginInstall`
 - Set display resolution to Scaled (on rMBP screen)
 - Remove "Applications" folder from bottom-right of Dock
-- Reorder Finder sidebar favorites alphabetically
+- Re-order Finder sidebar favorites alphabetically
 - Shortcuts
     - Set "Select the previous input source" to `cmd+space`
     - Set "Show Spotlight search" to `option+cmd+space`
@@ -44,7 +44,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
     - Fantastical (App Store)
     	- Configure accounts (Internet Accounts isn't enough)
     	- List shows: Selected Day Only
-    	- Add 1- min. message alertrs to timed events
+    	- Add 1-min. message alerts to timed events
     - Reeder (App Store)
     - Bartender
     - Alfred
