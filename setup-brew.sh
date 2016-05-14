@@ -9,7 +9,7 @@ fi;
 brew update
 
 for app in "ansible" \
-	   "bash" \
+	         "bash" \
            "bash-completion" \
            "coreutils" \
            "fortune" \
@@ -25,6 +25,7 @@ for app in "ansible" \
            "ssh-copy-id" \
            "sshrc" \
            "tcpflow" \
+           "titlecase" \
            "tree" \
            "vim" \
            "wget"; do
