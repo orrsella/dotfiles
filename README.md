@@ -70,6 +70,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
     - iWork
     - Office
     - WhatsApp
+    - TermHere (App Store)
 - Optional Apps
     - Backblaze
     - Disk Map
