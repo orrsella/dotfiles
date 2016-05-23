@@ -92,3 +92,8 @@ html() {
 whoport() {
   lsof -i :$1
 }
+
+# Trim a trailing newline from file
+remove_trailing_newline() {
+  perl -pi -e 'chomp if eof' $1
+}
