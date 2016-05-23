@@ -11,7 +11,13 @@
 	</array>
 	<key>showContacts</key>
 	<false/>
+	<key>showDocuments</key>
+	<true/>
 	<key>showFolders</key>
+	<true/>
+	<key>showImages</key>
+	<true/>
+	<key>showTextFiles</key>
 	<true/>
 </dict>
 </plist>
