@@ -1,4 +1,10 @@
 {
+	"added_words":
+	[
+		"Facebook",
+		"whiteboard",
+		"thru"
+	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
