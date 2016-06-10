@@ -121,13 +121,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1084 33 596 319 0 0 1680 1027 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>184 842 606 456 0 0 2560 1417 </string>
+	<string>184 940 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 477 620 392 0 0 1680 1027 </string>
+	<string>970 769 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>407 314 1578 591 0 0 2560 1417 </string>
+	<string>203 69 2054 542 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>530 92 1676 612 0 0 2560 1417 </string>
+	<string>-1678 277 1487 378 -1680 -66 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>652 291 1460 469 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -1057,6 +1057,20 @@
 					<key>Text</key>
 					<string></string>
 				</dict>
+				<key>0xf729-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>2</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0xf72b-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>0</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 			</dict>
 			<key>Link Color</key>
 			<dict>
@@ -1164,7 +1178,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>7AFCB6EC-C2BD-4295-B246-A267AAF50900</string>
 	<key>NoSyncLastTipTime</key>
-	<real>484052707.01138997</real>
+	<real>485354750.82944</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1175,6 +1189,8 @@
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>479127761.97977298</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -1219,6 +1235,18 @@
 		<string>0038</string>
 		<string>0039</string>
 		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1284,7 +1312,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-04T14:37:12Z</date>
+	<date>2016-06-01T13:15:28Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1335,6 +1363,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160426</string>
+	<string>2.9.20160523</string>
 </dict>
 </plist>
