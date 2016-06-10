@@ -3,7 +3,10 @@
 	[
 		"Facebook",
 		"whiteboard",
-		"thru"
+		"thru",
+		"Flytrap",
+		"screenshot",
+		"logcat"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
