@@ -13,6 +13,7 @@ for app in "ansible" \
            "bash-completion" \
            "coreutils" \
            "fortune" \
+           "fpp" \
            "gawk" \
            "git" \
            "gnu-tar" \
