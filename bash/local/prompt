@@ -10,7 +10,7 @@ fi
 
 export PS1="\
 ${BOLD}\
-${GREEN}${USER}@${SHORT_HOSTNAME}:\
+${GREEN}${USER}@${SHORT_HOSTNAME}${CYAN}\$(screen_info):\
 ${WHITE}${WORKING_DIRECTORY}\
 ${YELLOW}\$(scm_info) \
 ${PURPLE}$ ${RESET}"

@@ -41,3 +41,15 @@ Even more tools: http://techblog.netflix.com/2015/08/netflix-at-velocity-2015-li
                           - retrans/s  Number of TCP retransmits per second (sign of a network or server issue)
 10) ${BOLD}top/htop${RESET}            Non-rolling system overview (which makes it hard to see patterns over time). Pro-tip: Ctrl-S to pause, Ctrl-Q to continue."
 }
+
+# Start screen and source sshrc bash
+screenrc() {
+    local SCREENDIR=/tmp/screen-ssh-home
+    if ! [ -d $SCREENDIR ]; then
+        rm -rf $SCREENDIR
+        mkdir -p $SCREENDIR
+    fi
+    rm -rf $SCREENDIR/.sshrc.d
+    cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $SCREENDIR
+    SSHHOME=$SCREENDIR /usr/bin/screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
+}

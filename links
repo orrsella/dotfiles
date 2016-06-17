@@ -43,6 +43,7 @@
 ~/.sshrc.d/variables-ssh, /bash/ssh/variables
 ~/.sshrc.d/scripts-common, /bash/common/scripts
 ~/.sshrc.d/scripts-ssh, /bash/ssh/scripts
+~/.sshrc.d/.screenrc, /bash/ssh/.screenrc
 ~/.sshrc.d/.vimrc, /vim/ssh/.vimrc
 
 # Git
