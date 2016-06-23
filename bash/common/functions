@@ -97,3 +97,11 @@ whoport() {
 remove_trailing_newline() {
   perl -pi -e 'chomp if eof' $1
 }
+
+hg-log-user() {
+  if [[ "$1" == *@fb.com ]]; then
+    hg log --user $1
+  else
+    hg log --user "$1@fb.com"
+  fi
+}

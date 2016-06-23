@@ -14,7 +14,7 @@ source $SSHRCD/aliases-ssh
 source $SSHRCD/functions-ssh
 source $SSHRCD/prompt-ssh
 
-Screen
+# Screen
 if [ "$TERM" != "screen" ]; then
   screenrc -xRR
 fi

@@ -54,6 +54,6 @@ BG_LIGHT_WHITE="\[$(tput setab 15)\]"
 # Get screen session
 screen_info() {
   if [ "$TERM" == "screen" ]; then
-    echo $STY | cut -d '.' -f1 | xargs printf '(%s)'
+    echo $STY | cut -d '.' -f1 | xargs printf '[%s]'
   fi
 }
