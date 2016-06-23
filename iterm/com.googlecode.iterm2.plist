@@ -122,10 +122,12 @@
 	<string>1084 33 596 319 0 0 1680 1027 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>184 940 606 456 0 0 2560 1417 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>492 1836 400 129 -268 1050 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 769 620 392 0 0 2560 1417 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>203 69 2054 542 0 0 2560 1417 </string>
+	<string>-257 1330 1571 594 -268 1050 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1678 277 1487 378 -1680 -66 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1167,6 +1169,8 @@
 			<string>/Users/orr</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -1312,10 +1316,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-01T13:15:28Z</date>
+	<date>2016-06-19T11:49:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -1363,6 +1369,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160523</string>
+	<string>3.0.1</string>
 </dict>
 </plist>
