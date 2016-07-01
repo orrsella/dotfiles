@@ -3,6 +3,7 @@
 export SSHRCD="$SSHHOME/.sshrc.d"
 
 # Common
+source $SSHRCD/colors-common
 source $SSHRCD/variables-common
 source $SSHRCD/aliases-common
 source $SSHRCD/functions-common
@@ -14,7 +15,19 @@ source $SSHRCD/aliases-ssh
 source $SSHRCD/functions-ssh
 source $SSHRCD/prompt-ssh
 
-# Screen
-if [ "$TERM" != "screen" ]; then
-  screenrc -xRR
+# User
+if [ "$USER" != "$(whoami)" ]; then
+  USER=$(whoami)
+fi
+
+# Attach screen/tmux
+if [ "$TERM" != "screen" ] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
+  # Screen
+  # if which screen >/dev/null 2>&1; then
+  #   screenrc-create-or-attach-session
+  # fi
+
+  if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
+    tmuxrc-create-or-attach-session
+  fi
 fi

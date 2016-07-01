@@ -7,6 +7,7 @@ export LANG=en_US.UTF-8
 export BASH_DIR=~/.bash
 
 # Common
+source $BASH_DIR/colors-common
 source $BASH_DIR/variables-common
 source $BASH_DIR/aliases-common
 source $BASH_DIR/functions-common

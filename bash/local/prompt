@@ -9,8 +9,8 @@ if [ $(which fortune) ]; then
 fi
 
 export PS1="\
-${BOLD}\
-${GREEN}${USER}@${SHORT_HOSTNAME}${CYAN}\$(screen_info):\
-${WHITE}${WORKING_DIRECTORY}\
-${YELLOW}\$(scm_info) \
-${PURPLE}$ ${RESET}"
+${P_BOLD}\
+${P_GREEN}${USER}@${SHORT_HOSTNAME}${P_CYAN}\$(session_info):\
+${P_WHITE}${WORKING_DIRECTORY}\
+${P_YELLOW}\$(scm_info) \
+${P_PURPLE}$ ${P_RESET}"

@@ -47,12 +47,43 @@ Even more tools: http://techblog.netflix.com/2015/08/netflix-at-velocity-2015-li
 
 # Start screen and source sshrc bash
 screenrc() {
-    local SCREENDIR=/tmp/screen-ssh-home
-    if ! [ -d $SCREENDIR ]; then
-        rm -rf $SCREENDIR
-        mkdir -p $SCREENDIR
-    fi
-    rm -rf $SCREENDIR/.sshrc.d
-    cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $SCREENDIR
-    SSHHOME=$SCREENDIR /usr/bin/screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
+  local SCREENDIR=/tmp/screen-ssh-home
+  if ! [ -d $SCREENDIR ]; then
+    rm -rf $SCREENDIR
+    mkdir -p $SCREENDIR
+  fi
+  rm -rf $SCREENDIR/.sshrc.d
+  cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $SCREENDIR
+  # SSHHOME=$SCREENDIR /usr/bin/screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
+  SSHHOME=$SCREENDIR screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
+}
+
+# Start tmux and source sshrc bash
+tmuxrc() {
+  local TMUXDIR=/tmp/tmux-ssh-home
+  if ! [ -d $TMUXDIR ]; then
+    rm -rf $TMUXDIR
+    mkdir -p $TMUXDIR
+  fi
+  rm -rf $TMUXDIR/.sshrc.d
+  cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $TMUXDIR
+  # SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc /usr/bin/tmux -S $TMUXDIR/tmuxserver -f $TMUXDIR/.sshrc.d/.tmux.conf $@
+  SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc tmux -f $TMUXDIR/.sshrc.d/.tmux.conf $@
+}
+
+# Create or attach a screenrc session
+screenrc-create-or-attach-session() {
+  screenrc -xRR
+}
+
+# Create or attach a tmuxrc session
+tmuxrc-create-or-attach-session() {
+  local TMUX_SESSION_NAME="auto"
+  # tmuxrc -2CC new-session -s $TMUX_SESSION_NAME || tmuxrc -2CC attach-session -t $TMUX_SESSION_NAME
+
+  if tmux has-session -t $TMUX_SESSION_NAME >/dev/null 2>&1; then
+    tmuxrc -2CC attach-session -t $TMUX_SESSION_NAME
+  else
+    tmuxrc -2CC new-session -s $TMUX_SESSION_NAME
+  fi
 }

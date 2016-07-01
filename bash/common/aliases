@@ -21,6 +21,7 @@ alias ping='ping -c 5'                          # pings with 5 packets, not unli
 
 # Text formatting
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
+alias qdiff='git diff --no-index -- '
 
 # HTTP/web
 alias encode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
@@ -37,7 +38,10 @@ alias ga='git add -A'
 alias gp='git push origin HEAD'
 alias gd='git difftool'
 alias gc='git commit -m'
-alias gl='git log -n 20 --format="%ai  %Cgreen[%h]%Creset  [%<(12,trunc)%aN]  %s"'
+alias gl='git log -n 20 --format="%ai  %Cgreen%h%Creset  %<(10,trunc)%aN  %s"'
+
+# Mercurial
+alias hl='hg log --template "{localdate|isodatesec}  ${GREEN}{node|short}${RESET}  ${LIGHT_PURPLE}{pad(phabdiff, 8)}${RESET}  {pad(author|emailuser, 17)}  {desc|strip|firstline}\n"'
 
 # Misc
 alias rand='openssl rand -hex 16'

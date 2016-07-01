@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# Colors to use in commands. For prompt colors see prompt script.
+
+# RESET="$(tput sgr0)"
+RESET='\033[0m'
+BOLD="$(tput bold)"
+UNDERLINE="$(tput smul)"
+NO_UNDERLINE="$(tput rmul)"
+BLINK="$(tput blink)"
+REVERSE="$(tput rev)"
+
+BLACK="$(tput setaf 0)"
+RED="$(tput setaf 1)"
+GREEN="$(tput setaf 2)"
+YELLOW="$(tput setaf 3)"
+BLUE="$(tput setaf 4)"
+PURPLE="$(tput setaf 5)"
+CYAN="$(tput setaf 6)"
+WHITE="$(tput setaf 7)"
+
+LIGHT_BLACK="$(tput setaf 8)"
+LIGHT_RED="$(tput setaf 9)"
+LIGHT_GREEN="$(tput setaf 10)"
+LIGHT_YELLOW="$(tput setaf 11)"
+LIGHT_BLUE="$(tput setaf 12)"
+LIGHT_PURPLE="$(tput setaf 13)"
+LIGHT_CYAN="$(tput setaf 14)"
+LIGHT_WHITE="$(tput setaf 15)"
+
+BG_BLACK="$(tput setab 0)"
+BG_RED="$(tput setab 1)"
+BG_GREEN="$(tput setab 2)"
+BG_YELLOW="$(tput setab 3)"
+BG_BLUE="$(tput setab 4)"
+BG_PUEPLE="$(tput setab 5)"
+BG_CYAN="$(tput setab 6)"
+BG_WHITE="$(tput setab 7)"
+
+BG_LIGHT_BLACK="$(tput setab 8)"
+BG_LIGHT_RED="$(tput setab 9)"
+BG_LIGHT_GREEN="$(tput setab 10)"
+BG_LIGHT_YELLOW="$(tput setab 11)"
+BG_LIGHT_BLUE="$(tput setab 12)"
+BG_LIGHT_PURPLE="$(tput setab 13)"
+BG_LIGHT_CYAN="$(tput setab 14)"
+BG_LIGHT_WHITE="$(tput setab 15)"

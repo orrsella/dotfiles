@@ -4,4 +4,4 @@
 
 export PATH="$SSHRCD/scripts-common:$SSHRCD/scripts-ssh:$PATH"
 export VIMINIT="let \$MYVIMRC='$SSHRCD/.vimrc' | source \$MYVIMRC"
-export SHELL=`which bash`
+export SHELL=`which bash` # required for sshrc tmux/screen integration
