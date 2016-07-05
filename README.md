@@ -71,6 +71,7 @@ $ cd ~/.dotfiles/ && ./setup.sh
     - Office
     - WhatsApp
     - TermHere (App Store)
+    - Disk Map (App Store)
 - Optional Apps
     - Backblaze
     - Disk Map
