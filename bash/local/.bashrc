@@ -14,6 +14,7 @@ source $BASH_DIR/functions-common
 source $BASH_DIR/prompt-common
 
 # Local
+source $BASH_DIR/colors-local
 source $BASH_DIR/variables-local
 source $BASH_DIR/aliases-local
 source $BASH_DIR/functions-local

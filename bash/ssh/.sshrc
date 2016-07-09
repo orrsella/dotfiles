@@ -10,6 +10,7 @@ source $SSHRCD/functions-common
 source $SSHRCD/prompt-common
 
 # SSH
+source $SSHRCD/colors-ssh
 source $SSHRCD/variables-ssh
 source $SSHRCD/aliases-ssh
 source $SSHRCD/functions-ssh

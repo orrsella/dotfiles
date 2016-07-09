@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Colors to use in commands. For prompt colors see prompt script.
+
+RESET="$(tput sgr0)"

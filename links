@@ -21,6 +21,7 @@
 ~/.inputrc, /bash/local/.inputrc
 ~/.hushlogin, /bash/local/.hushlogin
 ~/.bash/colors-common, /bash/common/colors
+~/.bash/colors-local, /bash/local/colors
 ~/.bash/aliases-common, /bash/common/aliases
 ~/.bash/aliases-local, /bash/local/aliases
 ~/.bash/functions-common, /bash/common/functions
@@ -35,6 +36,7 @@
 # SSHRC
 ~/.sshrc, /bash/ssh/.sshrc
 ~/.sshrc.d/colors-common, /bash/common/colors
+~/.sshrc.d/colors-ssh, /bash/ssh/colors
 ~/.sshrc.d/aliases-common, /bash/common/aliases
 ~/.sshrc.d/aliases-ssh, /bash/ssh/aliases
 ~/.sshrc.d/functions-common, /bash/common/functions
