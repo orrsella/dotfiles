@@ -4,7 +4,6 @@
 
 NEW_LINE="\n"
 WORKING_DIRECTORY="\w"
-USER="\u"
 SHORT_HOSTNAME="\h"
 DATE_TIME="\D{%F %T}"
 

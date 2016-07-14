@@ -24,11 +24,11 @@ fi
 # Attach screen/tmux
 if [ "$TERM" != "screen" ] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
   # Screen
-  # if which screen >/dev/null 2>&1; then
-  #   screenrc-create-or-attach-session
-  # fi
-
-  if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
-    tmuxrc-create-or-attach-session
+  if which screen >/dev/null 2>&1; then
+    screenrc-create-or-attach-session
   fi
+
+  # if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
+  #   tmuxrc-create-or-attach-session
+  # fi
 fi

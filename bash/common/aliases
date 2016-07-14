@@ -19,7 +19,7 @@ alias disks='df -H -l'                          # show available disk space
 alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias ping='ping -c 5'                          # pings with 5 packets, not unlimited
 
-# Text formatting
+# Diff
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 alias qdiff='git diff --no-index -- '
 

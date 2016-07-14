@@ -12,6 +12,7 @@ for app in "ansible" \
 	         "bash" \
            "bash-completion" \
            "coreutils" \
+           "diff-so-fancy" \
            "fortune" \
            "fpp" \
            "gawk" \
