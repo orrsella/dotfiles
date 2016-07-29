@@ -290,7 +290,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Custom Shortcuts                                                            #
 ###############################################################################
 
-# Finder show next/previous tab
+# Finder show next/previous tab: cmd+option+right/left
 defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "\033Window\033Show Next Tab" -string "@~→"
 defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "\033Window\033Show Previous Tab" -string "@~←"
 
