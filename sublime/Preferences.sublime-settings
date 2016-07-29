@@ -6,11 +6,47 @@
 		"thru",
 		"Flytrap",
 		"screenshot",
-		"logcat"
+		"logcat",
+		"app"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.iml"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".buckd",
+		".idea",
+		"buck-out",
+		"intellij-out"
+	],
 	"font_face": "Menlo",
 	"font_size": 11.0,
 	"highlight_line": true,
@@ -29,7 +65,5 @@
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": "false",
-	"file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace", "*.iml"],
-	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".buckd", ".idea", "buck-out", "intellij-out"],
+	"word_wrap": "false"
 }

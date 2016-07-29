@@ -179,7 +179,6 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-
 # Hot corners
 # Possible values:
 #  0: no-op
@@ -286,3 +285,15 @@ defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+###############################################################################
+# Custom Shortcuts                                                            #
+###############################################################################
+
+# Finder show next/previous tab
+defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "\033Window\033Show Next Tab" -string "@~→"
+defaults write com.apple.Finder NSUserKeyEquivalents -dict-add "\033Window\033Show Previous Tab" -string "@~←"
+
+# Restart the Finder or kill the preferences daemon for the change to take effect:
+killall Finder
+killall cfprefsd
