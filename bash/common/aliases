@@ -41,7 +41,7 @@ alias gc='git commit -m'
 alias gl='git log -n 20 --format="%ai  %Cgreen%h%Creset  %<(10,trunc)%aN  %s"'
 
 # Mercurial
-alias hl='hg log --template "{localdate|isodatesec}  ${GREEN}{node|short}${RESET}  ${LIGHT_PURPLE}{pad(phabdiff, 8)}${RESET}  {pad(author|emailuser, 17)}  {desc|strip|firstline}\n"'
+alias hl='hg log --template "{date|localdate|isodatesec}  ${GREEN}{node|short}${RESET}  ${LIGHT_PURPLE}{pad(phabdiff, 8)}${RESET}  {pad(author|emailuser, 17)}  {desc|strip|firstline}\n"'
 
 # Misc
 alias rand='openssl rand -hex 16'
