@@ -1,0 +1,6 @@
+<application>
+  <component name="BuckOptionsProvider">
+    <option name="buckExecutable" value="/usr/local/bin/buck" />
+    <option name="adbExecutable" value="/usr/local/bin/adb" />
+  </component>
+</application>

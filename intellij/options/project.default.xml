@@ -1,7 +1,13 @@
 <application>
   <component name="ProjectManager">
     <defaultProject>
+      <component name="AndroidDexCompilerConfiguration">
+        <option name="VM_OPTIONS" value="-ea" />
+        <option name="MAX_HEAP_SIZE" value="4096" />
+      </component>
       <component name="CompilerConfiguration">
+        <option name="BUILD_PROCESS_HEAP_SIZE" value="4096" />
+        <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-ea" />
         <resourceExtensions />
         <wildcardResourcePatterns>
           <entry name="!?*.java" />
@@ -42,7 +48,7 @@
       </component>
       <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" assert-keyword="true" jdk-15="true" />
       <component name="PropertiesComponent">
-        <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+        <property name="settings.editor.selected.configurable" value="preferences.keymap" />
         <property name="settings.editor.splitter.proportion" value="0.2" />
       </component>
       <component name="RunManager">

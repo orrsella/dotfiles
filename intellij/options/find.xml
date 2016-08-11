@@ -1,16 +1,21 @@
 <application>
   <component name="FindSettings">
-    <option name="FILE_MASK" value="*.java" />
+    <option name="customScope" value="Module 'facebook'" />
+    <option name="defaultScopeName" value="Module 'facebook'" />
+    <option name="SEARCH_SCOPE" value="Module 'facebook'" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
       <mask>*.jsp</mask>
-      <mask>*.xml</mask>
       <mask>*.js</mask>
       <mask>*.as</mask>
       <mask>*.css</mask>
       <mask>*.mxml</mask>
       <mask>*.java</mask>
+      <mask>*.xsd</mask>
+      <mask>*.wsdl</mask>
+      <mask>*.xml</mask>
+      <mask>BUCK</mask>
     </recentFileMasks>
   </component>
 </application>
