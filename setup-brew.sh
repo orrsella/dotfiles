@@ -34,3 +34,7 @@ for app in "ansible" \
 
   brew install $app
 done
+
+for app in "qlstephen"; do
+  brew cask install $app
+done
