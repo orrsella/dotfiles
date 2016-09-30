@@ -5,3 +5,7 @@
 export PATH="$SSHRCD/scripts-common:$SSHRCD/scripts-ssh:$PATH"
 export VIMINIT="let \$MYVIMRC='$SSHRCD/.vimrc' | source \$MYVIMRC"
 export SHELL=`which bash` # required for sshrc tmux/screen integration
+
+# FB
+export ANDROID_SDK="/opt/android_sdk"
+export ANDROID_NDK_REPOSITORY="/opt/android_ndk"
