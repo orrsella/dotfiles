@@ -1,0 +1,6 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Required Plugins" displayType="STICKY_BALLOON" />
+    <notification groupId="Vcs Notifications" displayType="STICKY_BALLOON" />
+  </component>
+</application>

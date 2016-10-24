@@ -1,7 +1,7 @@
-YourKit Java Profiler 2016.02-b35 Integration
-com.facebook.tools.ideawatcher
-intellij.buck.plugin
 BashSupport
+Builder Generator
 PythonCore
+YourKit Java Profiler 2016.02-b35 Integration
 com.kukido.eclipser
+intellij.buck.plugin
 org.intellij.scala

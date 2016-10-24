@@ -1,6 +1,6 @@
 <application>
   <component name="GeneralSettings">
-    <option name="confirmExit" value="false" />
+    <option name="searchInBackground" value="true" />
     <option name="showTipsOnStartup" value="false" />
   </component>
   <component name="Registry">
