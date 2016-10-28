@@ -2,6 +2,12 @@
 
 export SSHRCD="$SSHHOME/.sshrc.d"
 
+if [ -d "/usr/facebook" ]; then
+  export FB_SERVER="true"
+else
+  export FB_SERVER="false"
+fi
+
 # Common
 source $SSHRCD/colors-common
 source $SSHRCD/variables-common

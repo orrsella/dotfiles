@@ -7,8 +7,11 @@ export VIMINIT="let \$MYVIMRC='$SSHRCD/.vimrc' | source \$MYVIMRC"
 export SHELL=`which bash` # required for sshrc tmux/screen integration
 
 # FB
-export ANDROID_SDK="/opt/android_sdk"
-export ANDROID_NDK_REPOSITORY="/opt/android_ndk"
-export ANDROID_HOME="$ANDROID_SDK"
-export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH"
-export JAVA_HOME="/usr/local/fb-jdk-8"
+if [ "$FB_SERVER" = true ]; then
+  export ANDROID_SDK="/opt/android_sdk"
+  export ANDROID_NDK_REPOSITORY="/opt/android_ndk"
+  export ANDROID_HOME="$ANDROID_SDK"
+  export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH"
+  export JAVA_HOME="/usr/local/fb-jdk-8"
+fi
+
