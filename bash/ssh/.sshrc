@@ -22,7 +22,7 @@ if [ "$USER" != "$(whoami)" ]; then
 fi
 
 # Attach screen/tmux
-if [ "$TERM" != "screen" ] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
+if [[ ! "$TERM" =~ ^screen.* ]] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
   # Screen
   if which screen >/dev/null 2>&1; then
     screenrc-create-or-attach-session

@@ -4,7 +4,7 @@
 
 export PS1="\
 ${P_BOLD}\
-${P_RED}${USER}@${SHORT_HOSTNAME}${P_CYAN}\$(session_info):\
+${P_RED}${USER}@${HOSTNAME}${P_CYAN}\$(session_info):\
 ${P_WHITE}${WORKING_DIRECTORY}\
 ${P_YELLOW}\$(scm_info) \
 ${P_PURPLE}$ ${P_RESET}"

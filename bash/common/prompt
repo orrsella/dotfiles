@@ -4,6 +4,7 @@
 
 NEW_LINE="\n"
 WORKING_DIRECTORY="\w"
+HOSTNAME=$(hostname)
 SHORT_HOSTNAME="\h"
 DATE_TIME="\D{%F %T}"
 
@@ -54,7 +55,7 @@ P_BG_LIGHT_WHITE="\[$(tput setab 15)\]"
 session_info() {
   if [[ -n "${TMUX+set}" ]]; then
     tmux display-message -p "#S" | xargs printf '[tmux:%s]'
-  elif [ "$TERM" == "screen" ]; then
+  elif [[ "$TERM" =~ ^screen.* ]]; then
     echo $STY | cut -d '.' -f1 | xargs printf '[screen:%s]'
   fi
 }
