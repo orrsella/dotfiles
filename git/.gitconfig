@@ -5,7 +5,7 @@
 	editor = vim
 [user]
 	name = Orr Sella
-	email = (none)
+	useConfigOnly = true
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
