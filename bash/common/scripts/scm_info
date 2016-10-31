@@ -40,7 +40,7 @@ _scm_info() {
       fmt=' (%s)'
     fi
   fi
-  d=$PWD
+  d=$(pwd -P)
   while : ; do
     if test -d "$d/.git" ; then
       git=$d
