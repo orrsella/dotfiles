@@ -2,6 +2,8 @@
 
 A collection of miscellaneous .files ("dot" files) and some regular files. Files can be saved anywhere in the repository, and symlinked to the actual files in their correct different locations on the system.
 
+If you're interested, here's a post with some more context: [Managing Local and Remote Dot Files](https://orrsella.com/2016/10/29/managing-local-and-remote-dot-files/)
+
 ## Add New File
 
 To add a new .file (or any other config file for that matter):
