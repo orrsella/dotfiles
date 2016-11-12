@@ -7,7 +7,14 @@
 		"Flytrap",
 		"screenshot",
 		"logcat",
-		"app"
+		"app",
+		"repo",
+		"repos",
+		"Config",
+		"Tmux",
+		"config",
+		"apps",
+		"dev"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",

@@ -27,7 +27,7 @@ if [ "$USER" != "$(whoami)" ]; then
   USER=$(whoami)
 fi
 
-# Attach screen/tmux
+# Attach screen/tmux upon session creation (comment out one of the two)
 if [[ ! "$TERM" =~ ^screen.* ]] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
   # Screen
   if which screen >/dev/null 2>&1; then
