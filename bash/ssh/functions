@@ -54,7 +54,6 @@ screenrc() {
   fi
   rm -rf $SCREENDIR/.sshrc.d
   cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $SCREENDIR
-  # SSHHOME=$SCREENDIR /usr/bin/screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
   SSHHOME=$SCREENDIR screen -c $SCREENDIR/.sshrc.d/.screenrc -s $SCREENDIR/bashsshrc $@
 }
 
@@ -67,7 +66,6 @@ tmuxrc() {
   fi
   rm -rf $TMUXDIR/.sshrc.d
   cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $TMUXDIR
-  # SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc /usr/bin/tmux -S $TMUXDIR/tmuxserver -f $TMUXDIR/.sshrc.d/.tmux.conf $@
   SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc tmux -f $TMUXDIR/.sshrc.d/.tmux.conf $@
 }
 
@@ -79,11 +77,15 @@ screenrc-create-or-attach-session() {
 # Create or attach a tmuxrc session
 tmuxrc-create-or-attach-session() {
   local TMUX_SESSION_NAME="auto"
-  # tmuxrc -2CC new-session -s $TMUX_SESSION_NAME || tmuxrc -2CC attach-session -t $TMUX_SESSION_NAME
 
   if tmux has-session -t $TMUX_SESSION_NAME >/dev/null 2>&1; then
     tmuxrc -2CC attach-session -t $TMUX_SESSION_NAME
   else
     tmuxrc -2CC new-session -s $TMUX_SESSION_NAME
   fi
+}
+
+# Set tmux window title
+tmux-title() {
+  tmux rename-window $@
 }

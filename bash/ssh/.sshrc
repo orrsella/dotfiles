@@ -29,13 +29,13 @@ fi
 
 # Attach screen/tmux upon session creation (comment out one of the two)
 if [[ ! "$TERM" =~ ^screen.* ]] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z "$TMUX" ]; then
-  # Screen
-  if which screen >/dev/null 2>&1; then
-    screenrc-create-or-attach-session
-  fi
+#   # Screen
+#   if which screen >/dev/null 2>&1; then
+#     screenrc-create-or-attach-session
+#   fi
 
   # Tmux
   # if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
-  #   tmuxrc-create-or-attach-session
+    tmuxrc-create-or-attach-session
   # fi
 fi

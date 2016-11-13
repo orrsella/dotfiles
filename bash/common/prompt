@@ -54,7 +54,7 @@ P_BG_LIGHT_WHITE="\[$(tput setab 15)\]"
 # Get tmux/screen session info
 session_info() {
   if [[ -n "${TMUX+set}" ]]; then
-    tmux display-message -p "#S" | xargs printf '[tmux:%s]'
+    tmux display-message -p "#{window_id}:#{window_name}" | xargs printf '[tmux:%s]'
   elif [[ "$TERM" =~ ^screen.* ]]; then
     echo $STY | cut -d '.' -f1 | xargs printf '[screen:%s]'
   fi
