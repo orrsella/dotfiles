@@ -2,12 +2,6 @@
 #
 #
 
-# User python simple http server to serve a directory
-servethis() {
-  open "http://localhost:8000";
-  python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()';
-}
-
 ssh_tunnel() {
   local HOST=$1
   local PORT=$2

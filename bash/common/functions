@@ -98,10 +98,21 @@ remove_trailing_newline() {
   perl -pi -e 'chomp if eof' $1
 }
 
+# TODO: What does this do?
 hg-log-user() {
   if [[ "$1" == *@fb.com ]]; then
     hg log --user $1
   else
     hg log --user "$1@fb.com"
   fi
+}
+
+# User python simple http server to serve a directory
+servethis() {
+  local port=$1
+  if [ -z "$port" ]; then
+    port=8080
+  fi
+
+  python -m SimpleHTTPServer $port
 }
