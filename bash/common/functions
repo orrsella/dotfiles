@@ -116,3 +116,19 @@ servethis() {
 
   python -m SimpleHTTPServer $port
 }
+
+# Convert unix time to date
+unixtime() {
+  local os=$(uname -a | cut -d ' ' -f1)
+  if [ ! -z $1 ]; then
+    if [ "$os" == "Darwin" ]; then
+      # Mac
+      date -r$1 "+%Y-%m-%d %H:%M:%S"
+    else
+      # Linux (and everything else)
+      date -d @$1 "+%Y-%m-%d %H:%M:%S"
+    fi
+  else
+    date +%s
+  fi
+}

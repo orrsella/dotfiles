@@ -89,3 +89,8 @@ tmuxrc-create-or-attach-session() {
 tmux-title() {
   tmux rename-window $@
 }
+
+# Find which ports a process is listening on
+whichport() {
+  ss -l -p -n | grep $1
+}
