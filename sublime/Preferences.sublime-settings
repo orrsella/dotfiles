@@ -14,7 +14,8 @@
 		"Tmux",
 		"config",
 		"apps",
-		"dev"
+		"dev",
+		"gauge"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
