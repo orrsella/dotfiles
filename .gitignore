@@ -8,3 +8,4 @@ sublime/Package Control.merged-ca-bundle
 sublime/Package Control.system-ca-bundle
 sublime/Package Control.user-ca-bundle
 sublime/oscrypto-ca-bundle.crt
+bash/local/scripts/gen-single-host.py
