@@ -42,6 +42,7 @@ set noerrorbells               " Disable error bells
 set mouse=a                    " Enable mouse in all modes
 set nowrap                     " Don't wrap lines
 set clipboard=unnamed          " Make clipboard work with OS clipboard
+set autoindent                 " Add a new line with the same indentation
 
 " Airline Plugin
 let &t_Co=256
