@@ -11,6 +11,6 @@ fi
 export PS1="\
 ${P_BOLD}\
 ${P_GREEN}${USER}@${SHORT_HOSTNAME}${P_CYAN}\$(session_info):\
-${P_WHITE}${WORKING_DIRECTORY}\
+${P_BLUE}${WORKING_DIRECTORY}\
 ${P_YELLOW}\$(scm_info) \
-${P_PURPLE}$ ${P_RESET}"
+${P_BLUE}$ ${P_RESET}"

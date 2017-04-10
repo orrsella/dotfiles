@@ -22,6 +22,7 @@ for app in "ansible" \
            "httpie" \
            "ifstat" \
            "jq" \
+           "parallel" \
            "python3" \
            "ruby" \
            "ssh-copy-id" \

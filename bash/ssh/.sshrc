@@ -35,7 +35,8 @@ if [[ ! "$TERM" =~ ^screen.* ]] && [ "$TERM" != "nuclide" ] && [ -t 0 ] && [ -z 
 #   fi
 
   # Tmux
-  if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
+  # if which tmux >/dev/null 2>&1 && [[ "`tmux -V`" == "tmux 1.8" ]]; then
+  if which tmux >/dev/null 2>&1; then
     tmuxrc-create-or-attach-session
   fi
 fi
