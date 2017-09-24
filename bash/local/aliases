@@ -20,7 +20,6 @@ alias pdfmerge="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
 
 # Folders
-alias dev='cd ~/Dev'
 alias dl='cd ~/Downloads'
 alias dp='cd ~/Dropbox\ \(Personal\)'
 
@@ -62,3 +61,4 @@ alias fblite-install-client='buck install --run fblite'
 alias fblite-debug-client='buck install --run fblite_debug'
 alias fblite-debug-wait-client='buck install --wait-for-debugger fblite_debug'
 alias android-device-monitor='monitor&'
+alias dev='sshrc dev'

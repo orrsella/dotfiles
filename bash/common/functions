@@ -132,3 +132,11 @@ unixtime() {
     date +%s
   fi
 }
+
+# Count number of lines for a file/regex, recursively. Pass in a concerete file name, or a regex
+# (surrounded by quotes). E.g.:
+# - "*.xml"
+# - MyClass.java
+countr() {
+  find . -name "$1" | xargs wc -l
+}

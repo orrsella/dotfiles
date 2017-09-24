@@ -26,7 +26,6 @@ export MAVEN_OPTS="-Xmx4g"
 # fi
 
 # FB
-export PATH="~/buck/bin:$PATH"
 export ANDROID_SDK="/opt/android-sdk"
 export ANDROID_NDK="/opt/android-ndk"
 export ANDROID_HOME="$ANDROID_SDK"
