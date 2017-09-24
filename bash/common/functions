@@ -138,5 +138,5 @@ unixtime() {
 # - "*.xml"
 # - MyClass.java
 countr() {
-  find . -name "$1" | xargs wc -l
+  find . -type f -name "$1" -exec cat {} + | wc -l
 }
