@@ -7,7 +7,7 @@ ssh_tunnel() {
   local PORT=$2
 
   if [ -z "$HOST" ]; then
-    echo "No port provided!"
+    echo "No host provided!"
     return 1
   fi
 
@@ -25,15 +25,52 @@ ssh_tunnel() {
   fi
 
   echo "${RED}${BOLD}"
-  echo "   _____ __             __  _                __________ __  __   ______                       __"
-  echo "  / ___// /_____ ______/ /_(_)___  ____ _   / ___/ ___// / / /  /_  __/_  ______  ____  ___  / /"
-  echo "  \__ \/ __/ __ \`/ ___/ __/ / __ \/ __ \`/   \__ \\\__ \/ /_/ /    / / / / / / __ \/ __ \/ _ \/ / "
-  echo " ___/ / /_/ /_/ / /  / /_/ / / / / /_/ /   ___/ /__/ / __  /    / / / /_/ / / / / / / /  __/ /  "
-  echo "/____/\__/\__,_/_/   \__/_/_/ /_/\__, /   /____/____/_/ /_/    /_/  \__,_/_/ /_/_/ /_/\___/_/   "
-  echo "                                /____/                                                          "
+  echo "Starting SSH tunneling:"
+  echo "======================="
+  echo ""
   echo "  Host: $HOST"
   echo "  Port: $PORT"
   echo "${RESET}"
 
   ssh -D $PORT -N $HOST
+}
+
+ssh_port_forward() {
+  local HOST=$1
+  local REMOTE_PORT=$2
+  local LOCAL_PORT=$3
+
+  if [ -z "$HOST" ]; then
+    echo "No host provided!"
+    return 1
+  fi
+
+  if [ -z "$REMOTE_PORT" ]; then
+    echo "No remote port provided!"
+    return 1
+  fi
+
+  if [ -z "$LOCAL_PORT" ]; then
+    echo "No local port provided!"
+    return 1
+  fi
+
+  nc -z localhost $LOCAL_PORT 2> /dev/null
+
+  if [ $? -eq 0 ]; then
+    echo "${YELLOW}${BOLD}Port already forwarded!${RESET}"
+    echo ""
+    return 1
+  fi
+
+  echo "${RED}${BOLD}"
+  echo "Starting SSH port forwarding:"
+  echo "============================="
+  echo ""
+  echo "  Host: $HOST"
+  echo "  Remote port: $REMOTE_PORT"
+  echo "  Local port: $LOCAL_PORT"
+  echo "${RESET}"
+
+  ssh -L $LOCAL_PORT:$HOST:$REMOTE_PORT -N $HOST
 }
