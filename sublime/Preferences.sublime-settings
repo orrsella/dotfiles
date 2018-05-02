@@ -15,7 +15,22 @@
 		"config",
 		"apps",
 		"dev",
-		"gauge"
+		"gauge",
+		"roadmap",
+		"H2",
+		"https",
+		"fb",
+		"facebook",
+		"permalink",
+		"Q3",
+		"Q4",
+		"Pre",
+		"H1",
+		"Tal",
+		"Kellner",
+		"Hotswap",
+		"Amir",
+		"diffs"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
@@ -61,6 +76,10 @@
 	"ignored_packages":
 	[
 		"Vintage"
+	],
+	"ignored_words":
+	[
+		"Shalem"
 	],
 	"rulers":
 	[
