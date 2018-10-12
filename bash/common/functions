@@ -57,7 +57,7 @@ psgrep() {
 
 # Kills any process that matches a regexp passed to it
 killit() {
-  ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill
+  ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs sudo kill -9
 }
 
 # Syntax-highlight JSON strings or files

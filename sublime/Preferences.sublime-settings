@@ -30,7 +30,26 @@
 		"Kellner",
 		"Hotswap",
 		"Amir",
-		"diffs"
+		"diffs",
+		"Skycastle",
+		"Facebook's",
+		"Starlark",
+		"Legocastle",
+		"Diff",
+		"diff",
+		"www",
+		"codebase",
+		"async",
+		"indices",
+		"Starcastle",
+		"Bazel",
+		"workflows",
+		"toolchain",
+		"Determinator",
+		"jupiter",
+		"deps",
+		"skycastle",
+		"workflow"
 	],
 	"bold_folder_labels": false,
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
@@ -56,8 +75,7 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace",
-		"*.iml"
+		"*.sublime-workspace"
 	],
 	"folder_exclude_patterns":
 	[
@@ -66,7 +84,6 @@
 		".hg",
 		"CVS",
 		".buckd",
-		".idea",
 		"buck-out",
 		"intellij-out"
 	],
