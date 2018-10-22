@@ -300,3 +300,6 @@ defaults write com.apple.Safari NSUserKeyEquivalents -dict-add "\033Window\033Sh
 killall Finder
 killall Safari
 killall cfprefsd
+
+# Fix macOS Mojave font smoothing:
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
