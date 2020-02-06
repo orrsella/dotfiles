@@ -1,3 +1,6 @@
 [ui]
 username = Orr Sella <orr@fb.com>
 
+
+[hint]
+ack = revnum-deprecate

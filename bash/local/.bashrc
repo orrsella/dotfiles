@@ -12,6 +12,7 @@ source $BASH_DIR/variables-common
 source $BASH_DIR/aliases-common
 source $BASH_DIR/functions-common
 source $BASH_DIR/prompt-common
+source $BASH_DIR/history-common
 
 # Local
 source $BASH_DIR/colors-local

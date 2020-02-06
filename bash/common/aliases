@@ -58,3 +58,4 @@ alias kdiff='ksdiff'
 alias checksum='md5'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 alias sum="xargs | tr ' ' '+' | bc"
+alias tree="tree -a"

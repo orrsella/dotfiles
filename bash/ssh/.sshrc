@@ -14,6 +14,7 @@ source $SSHRCD/variables-common
 source $SSHRCD/aliases-common
 source $SSHRCD/functions-common
 source $SSHRCD/prompt-common
+source $SSHRCD/history-common
 
 # SSH
 source $SSHRCD/colors-ssh
