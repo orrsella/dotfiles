@@ -9,29 +9,62 @@ fi;
 brew update
 
 for app in "ansible" \
-	         "bash" \
+           "bash" \
+           "ant" \
+           "bash" \
            "bash-completion" \
+           "bazel" \
            "coreutils" \
            "diff-so-fancy" \
+           "exiftool" \
+           "fontconfig" \
            "fortune" \
            "fpp" \
+           "freetype" \
            "gawk" \
+           "gd" \
+           "gdbm" \
+           "gettext" \
            "git" \
+           "glib" \
            "gnu-tar" \
+           "go" \
+           "graphviz" \
+           "gts" \
            "htop-osx" \
            "httpie" \
+           "icu4c" \
            "ifstat" \
+           "jasper" \
+           "jpeg" \
            "jq" \
+           "libffi" \
+           "libidn2" \
+           "libpng" \
+           "libtiff" \
+           "libtool" \
+           "libunistring" \
+           "netpbm" \
+           "node" \
+           "oniguruma" \
+           "openssl" \
+           "p7zip" \
            "parallel" \
+           "pcre" \
+           "python" \
            "python3" \
+           "readline" \
            "ruby" \
+           "sqlite" \
            "ssh-copy-id" \
            "sshrc" \
            "tcpflow" \
            "titlecase" \
            "tree" \
            "vim" \
-           "wget"; do
+           "webp" \
+           "wget" \
+           "xz"; do
 
   brew install $app
 done
