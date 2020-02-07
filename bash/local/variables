@@ -15,7 +15,7 @@ if [ -e "/usr/local/opt/gnu-tar/libexec/gnubin/tar" ]; then
 fi
 
 # JVM
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 export MAVEN_OPTS="-Xmx4g"
 
 # For maven 3.3.9 don't set M2_HOME anymore:
