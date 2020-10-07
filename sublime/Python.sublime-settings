@@ -3,6 +3,7 @@
 	[
 		"BUCK",
 		"bzl",
-		"sky"
+		"sky",
+                "td"
 	]
 }

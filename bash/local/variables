@@ -35,3 +35,6 @@ export DEVSERVER="devvm126.prn3.facebook.com"
 
 # Silense mac "The default interactive shell" message
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Add sphinx to the PATH:
+export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"

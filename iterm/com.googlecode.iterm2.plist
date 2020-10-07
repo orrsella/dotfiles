@@ -149,14 +149,16 @@
 	<string>0 163 224 275 0 0 3360 1867 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>1520 1286 799 448 0 0 3840 2137 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>696 726 400 129 0 0 3360 1867 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1610 1328 620 392 0 0 3840 2137 </string>
+	<string>586 528 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>675 303 1585 544 0 0 3360 1867 </string>
+	<string>4 541 1663 559 0 0 3360 1867 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>40 156 1487 482 0 0 1792 1097 </string>
+	<string>97 265 2047 482 0 0 3360 1867 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>554 306 570 452 0 0 3840 2137 </string>
+	<string>473 348 1130 352 0 0 3360 1867 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2551,6 +2553,8 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.10beta1</string>
+		<string>3.3.9beta1</string>
 		<string>3.3.7</string>
 		<string>3.3.8beta5</string>
 	</array>
@@ -2559,25 +2563,38 @@
 		<string>Monaco</string>
 		<string>Menlo</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {3360, 1890}}</string>
+		<key>topLeft</key>
+		<string>{1377, 1537}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {3360, 1890}}</string>
 		<key>topLeft</key>
-		<string>{1402, 1137}</string>
+		<string>{924, 1128}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>68D77685-1670-4B0E-9C74-3CDD5FFFA814</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
+	<integer>34</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncNewTabFromTmuxOpensTmux</key>
+	<true/>
+	<key>NoSyncNewTabFromTmuxOpensTmux_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>602810669.40651703</real>
+	<real>603316699.29837799</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -3394,9 +3411,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-07T01:07:57Z</date>
+	<date>2020-05-26T08:01:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUSkippedVersion</key>
+	<string>3.3.10beta4</string>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>3218728758</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -3407,6 +3428,8 @@
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
+	<key>Size Changes Affect Profile</key>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -3459,7 +3482,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta5</string>
+	<string>3.3.10beta1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
