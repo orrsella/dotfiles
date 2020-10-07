@@ -59,7 +59,3 @@ alias checksum='md5'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 alias sum="xargs | tr ' ' '+' | bc"
 alias tree="tree -a"
-
-# FB
-alias build='buck build @mode/mac skycastle/src/...'
-alias test='buck test @mode/mac skycastle/src/...'
