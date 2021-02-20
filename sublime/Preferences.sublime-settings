@@ -88,7 +88,6 @@
 		"intellij-out"
 	],
 	"font_face": "Menlo",
-	"font_size": 11.0,
 	"gpu_window_buffer": false,
 	"highlight_line": true,
 	"ignored_packages":
