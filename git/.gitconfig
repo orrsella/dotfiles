@@ -6,6 +6,7 @@
 [user]
 	name = Orr Sella
 	useConfigOnly = true
+	email = orr@sella.org
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
