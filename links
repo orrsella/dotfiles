@@ -60,16 +60,9 @@
 # Mercurial
 ~/.hgrc, /hg/.hgrc
 
-# Sbt
-# ~/.sbt/build.sbt, /sbt/0.12/build.sbt
-# ~/.sbt/plugins/plugins.sbt, /sbt/0.12/plugins.sbt
-# ~/.sbt/0.13/build.sbt, /sbt/0.13/build.sbt
-# ~/.sbt/0.13/plugins/plugins.sbt, /sbt/0.13/plugins.sbt
-
 # Vim
 ~/.vim, /vim/local
 ~/.vimrc, /vim/local/.vimrc
 
 # Sublime
-# ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings, /sublime/Preferences.sublime-settings
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime
