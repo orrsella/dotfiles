@@ -47,6 +47,7 @@ alias hg-show-shelve='hg shelve -l -p'
 alias hg-prev='hg up $(hg id -i)^1'
 alias hg-next='hg up $(hg log -r "children($(hg id -i))" --template "{node|short}\n")'
 alias hg-accept-theirs='hg resolve -t internal:other --all'
+alias hg-blame='hg blame -culp'
 
 # Misc
 alias rand='openssl rand -hex 16'
