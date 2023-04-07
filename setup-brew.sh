@@ -8,12 +8,9 @@ fi;
 
 brew update
 
-for app in "ansible" \
-           "bash" \
+for app in "bash" \
            "ant" \
-           "bash" \
            "bash-completion" \
-           "bazel" \
            "coreutils" \
            "diff-so-fancy" \
            "exiftool" \
@@ -69,6 +66,6 @@ for app in "ansible" \
   brew install $app
 done
 
-for app in "qlstephen"; do
-  brew cask install $app
-done
+# for app in "qlstephen"; do
+#   brew cask install $app
+# done

@@ -54,15 +54,15 @@
 ~/.sshrc.d/.vimrc, /vim/ssh/.vimrc
 
 # Git
-~/.gitconfig, /git/.gitconfig
-~/.git/.gitignore, /git/.gitignore
+# ~/.gitconfig, /git/.gitconfig
+# ~/.git/.gitignore, /git/.gitignore
 
 # Mercurial
-~/.hgrc, /hg/.hgrc
+# ~/.hgrc, /hg/.hgrc
 
 # Vim
-~/.vim, /vim/local
-~/.vimrc, /vim/local/.vimrc
+# ~/.vim, /vim/local
+# ~/.vimrc, /vim/local/.vimrc
 
 # Sublime
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime
+# ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User, /sublime
