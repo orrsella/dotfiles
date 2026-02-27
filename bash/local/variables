@@ -10,8 +10,8 @@ fi
 export PATH="/usr/local/bin:/usr/local/sbin:$BASH_DIR/scripts-common:$BASH_DIR/scripts-local:$PATH"
 
 # Use gnutar as tar, for sshrc warnings
-if [ -e "/usr/local/opt/gnu-tar/libexec/gnubin/tar" ]; then
-  export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+if [ -e "/opt/homebrew/opt/gnu-tar/libexec/gnubin/tar" ]; then
+  export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
 fi
 
 # JVM
@@ -31,7 +31,7 @@ export ANDROID_NDK="/opt/android-ndk"
 export ANDROID_HOME="$ANDROID_SDK"
 export NDK_HOME="$ANDROID_NDK/android-ndk-r10e"
 export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH"
-export DEVSERVER="devvm126.prn3.facebook.com"
+export DEVSERVER="devvm20046.cco0.facebook.com"
 
 # Silense mac "The default interactive shell" message
 export BASH_SILENCE_DEPRECATION_WARNING=1
