@@ -34,3 +34,4 @@ shopt -s cdspell;
 # FB
 # source /Users/orr/fblite-env/env_vars.sh
 # source /Users/orr/fblite-env/fbsource/fbandroid/apps/fblite/devEnv/bootstrap/devenv_helpers.sh
+. "$HOME/.cargo/env"

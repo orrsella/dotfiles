@@ -13,5 +13,6 @@ if [ "$FB_SERVER" = true ]; then
   export ANDROID_HOME="$ANDROID_SDK"
   export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH"
   export JAVA_HOME="/usr/local/fb-jdk-8"
+  source /usr/facebook/ops/rc/master.bashrc
 fi
 

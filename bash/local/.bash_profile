@@ -11,3 +11,4 @@ fi
 # or if you would rather this bit of code 'live' somewhere else
 . ~/.fbchef/environment
 # END: Block added by chef
+. "$HOME/.cargo/env"
